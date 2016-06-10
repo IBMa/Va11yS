@@ -1,5 +1,5 @@
 # ta11y
-### Testable the accessibility of HTML &amp; ARIA samples
+### Testing the accessibility of HTML &amp; ARIA samples
 
 These code samples help developers and testers understand how different web components operate with assistive technology (AT) on desktop and mobile devices. They contain sample components along with testing results. When a new OS or AT is released, the data will be updated.
 
