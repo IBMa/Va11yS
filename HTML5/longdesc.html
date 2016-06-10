@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Longdesc</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html5.html">HTML5</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>Longdesc</h1>
+        <p>Source: <a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/H45">W3 techniques, h45</a>
+        </p>
+        <!-- Component start -->
+        <p><img src="chart.png" alt="a complex chart" longdesc="chartdesc.html" /></p>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <hr>
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>iOS 9.31
+                    <ul>
+                        <li>Issues: No indication of long description, tapping the image does not read the assigned description.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

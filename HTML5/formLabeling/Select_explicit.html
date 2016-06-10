@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <!-- Adjust link to stylesheet as needed -->
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <title>Combobox - Explicit Labeling</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../../index.html">Home</a> > <a href="../html5.html">HTML5</a> > <a href="formLabeling.html"> Form Labeling</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>Combobox - Explicit Labeling</h1>
+        <form>
+            <fieldset>
+                <legend>Drinks</legend>
+                <label for="drink">Select your favorite drink: </label>
+                <select name="drink=" id="drink">
+                    <option value="notSelected">Select one...</option>
+                    <option value="coffee">Coffee</option>
+                    <option disabled value="tea">Tea</option>
+                    <option value="orange juice">Orange Juice</option>
+                    <option value="apple juice">Apple Juice</option>
+                </select>
+                <p>
+                    <input type="submit" value="Submit">
+                    <input type="button" value="Cancel">
+                </p>
+            </fieldset>
+        </form>
+    </main>
+    <footer role="contentinfo">
+        <hr>
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>iOS 9.3.2 and VoiceOver
+                    <ul>
+                        <li>Results:</li>
+                    </ul>
+                </li>
+                <li>Firefox 45 and JAWS 17
+                    <ul>
+                        <li>Results:</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

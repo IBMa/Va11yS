@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Forms Example</title>
+    <style type="text/css">
+    h1,
+    legend {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    label,
+    input,
+    select {
+        display: block;
+    }
+    
+    input,
+    select {
+        margin-bottom: 1em;
+    }
+    
+    fieldset {
+        margin-bottom: 2em;
+        padding: 1em;
+    }
+    
+    fieldset fieldset {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    input[type="checkbox"] {
+        display: inline;
+    }
+    
+    .range {
+        margin-bottom: 1em;
+    }
+    
+    .card-type input,
+    .card-type label {
+        display: inline-block;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html5.html">HTML5</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>Forms Example</h1>
+        <!-- Component start -->
+        <p>Source credit: <a href="http://html5doctor.com/demos/forms/forms-example.html">HTML5 Doctor</a>
+            <form id="register">
+                <h1>Register for Miss Bakers Space Cadets</h1>
+                <fieldset>
+                    <legend>Personal details</legend>
+                    <div>
+                        <label>First Name
+                            <input id="given-name" name="given-name" type="text" placeholder="First name only" required autofocus>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Last Name
+                            <input id="family-name" name="family-name" type="text" placeholder="Last name only" required autofocus>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Date of Birth
+                            <input id="dob" name="dob" type="date" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Email
+                            <input id="email" name="email" type="email" placeholder="example@domain.com" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>URL
+                            <input id="url" name="url" type="url" placeholder="http://mysite.com">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Telephone
+                            <input id="phone" name="phone" type="tel" placeholder="Eg. +447000 000000" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Shoesize
+                            <input id="shoes" name="shoes" type="number" min="5" max="18" step="0.5" value="9">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Flying Skill level (1 low - 100 high)
+                            <input id="skill" name="skill" type="range" min="1" max="100" value="0">
+                            <output name="output" onforminput="value=a.value">0</output>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Billing address</legend>
+                    <div>
+                        <label>Address
+                            <textarea id="address" name="address" rows=5 required></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Post code
+                            <input id="postCode" name="postCode" type="text" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Country
+                            <input id="country" name="country" list="country-names" type="text" required>
+                            <datalist id="country-names">
+                                <option label="England" value="England"></option>
+                                <option label="Northern Ireland" value="Northern Ireland"></option>
+                                <option label="Ireland" value="Ireland"></option>
+                                <option label="Scotland" value="Scotland"></option>
+                                <option label="Wales" value="Wales"></option>
+                            </datalist>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Card details</legend>
+                    <fieldset>
+                        <legend>Card type</legend>
+                        <div class="card-type">
+                            <input id="visa" name="cardtype" type="radio">
+                            <label for="visa">VISA</label>
+                            <input id="mastercard" name="cardtype" type="radio">
+                            <label for="mastercard">Mastercard</label>
+                            <input id="amex" name="cardtype" type="radio">
+                            <label for="amex">AMEX</label>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <label>Name
+                            <input id="cardName" name="cardName" type="text" placeholder="Name as it appears on your card" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Card number
+                            <input id="cardNo" name="cardNo" type="number" required title="The sixteen digit number across the middle of your card.">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Security code
+                            <input id="security" name="security" type="number" required pattern="[0-9]{3}" title="The last three digits on the back of your card.">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Expiry Date
+                            <input id="expiry" name="expiry" type="month">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <button type=submit>Place Order</button>
+                    </div>
+                </fieldset>
+            </form>
+            <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <hr>
+        <h3>Tested on: iOS 9.31</h3>
+        <div>
+                        <li>Issues:  pop-up boxes show under the document, labels are not read. It is not obvious that it is a date field, the user can only find it out from field content data.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

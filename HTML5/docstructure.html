@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>HTML5 Document Sections</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html5.html">HTML5</a>
+            <p>This is the header section of the page. It contains a nav section with a role of navigation.</p>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>HTML5 Document Sections</h1>
+        <!-- Component start -->
+        <p>This the main part of the document.</p>
+        <article>
+            <p>An article in the main section.</p>
+        </article>
+    </main>
+    <aside>
+        <p>Aside section</p>
+    </aside>
+    <article>
+        An article on its own, outside of the main element.
+    </article>
+    <section>
+        <p>This is a section.</p>
+    </section>
+    <address>
+        <p>Address section</p>
+    </address>
+    <!-- Component end -->
+    <footer role="contentinfo">
+        <hr>
+        <p>This is the footer</p>
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>iOS 9.31
+                    <ul>
+                        <li>Issues: Only the following sections are announced: Navigation, header section reads banner, main</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

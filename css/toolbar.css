@@ -1,0 +1,73 @@
+.grey-box {
+    background: #ddd;
+    padding: 1.5em;
+}
+
+button,
+[role="button"],
+[role="button"]:visited,
+[role="button"]:hover,
+[type="submit"],
+[type="reset"] {
+    background: #1928CF;
+    border: 0;
+    color: #fefefe;
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 0.125em 0.5em;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: auto;
+    font-family: inherit;
+    vertical-align: middle;
+}
+
+[role="toolbar"] {
+    padding: 0.75em;
+    background: #bbb;
+    position: relative;
+    text-align: center;
+}
+
+[role="toolbar"]:after {
+    content: '\25bc';
+    display: block;
+    width: 100%;
+    text-indent: -0.75em;
+    text-align: center;
+    position: absolute;
+    bottom: -0.75em;
+    font-size: 1.5em;
+    color: #bbb;
+}
+
+[role="toolbar"] button {
+    margin: 0.5em;
+    box-shadow: 1px 1px 0 #222, 2px 2px 0 #222, 3px 3px 0 #222, 4px 4px 0 #222, 5px 5px 0 #222, 6px 6px 0 #222;
+    position: relative;
+    top: -6px;
+}
+
+[role="toolbar"] [aria-pressed="true"],
+[role="toolbar"] button:active {
+    box-shadow: 1px 1px 0 #222, 2px 2px 0 #222;
+    top: -2px;
+}
+
+[role="toolbar"] button:focus {
+    outline: none;
+    background: #1A248F;
+}
+
+[role="toolbar"] + ul li {
+    background: #fff;
+    list-style: none;
+    padding: 0.5em;
+    margin: 0.25em 0;
+}
+
+#sortable:focus {
+    outline: thin dotted;
+    outline-offset: 5px;
+}

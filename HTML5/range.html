@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test Date</title>
+
+<style type="text/css">
+
+.custom {
+  width: 80%;
+  -webkit-appearance: none !important;
+  height:20px;
+  border-radius: 8px;
+  background:-webkit-gradient(linear,center top, center bottom, from(#CFDCDD),to(#DFE9EA),color-stop(50%,#DFE9EA));
+-webkit-transition: background 450ms;
+  transition: background 450ms;
+}
+
+/* Change the Slider Button Color Here */
+.custom::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background:#108A93;
+    height:30px;
+    width:30px;
+    border-radius: 15px;
+}
+
+.custom::-webkit-slider-thumb:before {
+  background-color: red;
+}
+
+.custom::-webkit-slider-thumb:after {
+  background-color: green;
+}
+
+</style>
+<body style="padding-left:40px;">
+
+  <h2> &lt;input type&#61;&quot;range&quot;&gt;  (browser default)</h2>
+  <input type="range" style="width:40%">
+
+  <!-- a bit more style -->
+  <h2> &lt;input type&#61;&quot;range&quot; class&#61;&quot;custom&quot;&gt; (a bit of style)</h2>
+  <input type="range" class="custom" value ="0">
+
+    <!-- a bit more style -->
+  <h2> &lt;input type&#61;&quot;range&quot; class&#61;&quot;custom&quot;&gt; (min="0" max="100" value ="20")</h2>
+  <input type="range" class="custom" min="0" max="100" value ="20">
+
+
+	<h2 id="text1"> input  type="range"  min="0" max="10" step="2" value="8"</h2>
+	<input type="range"  min="0" max="10" step="2" value="8" style="width:40%">
+	<h2 id="text1"> input type="range" min="0" max="100" value="10" id="fader" step="20" list="volsettings" </h2>
+	<label for="fader">Volume</label> 
+	<input type="range" min="0" max="100" value="10" id="fader" step="20" list="volsettings" style="width:30%">
+	<datalist id="volsettings">
+		<option value="0">Volume 0</option>
+		<option value="20">Volume 20</option>
+		<option value="40">Volume 40</option>
+		<option value="60">Volume 60</option>
+		<option value="80">Volume 80</option>
+		<option value="100">Volume 100</option>
+	</datalist>
+    
+</body>
+</html>
