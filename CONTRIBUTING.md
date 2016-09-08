@@ -2,7 +2,7 @@
 
 We welcome contributions to the ta11y Project in many forms, and there's always plenty to do!
 
-First things first, please review the ta11y Project's [Code of Conduct](CONDUCT.md)before participating. It is important that we keep things civil. 
+First things first, please review the ta11y Project's [Code of Conduct](CONDUCT.md) before participating. It is important that we keep things civil. 
 
 ### Getting help
 If you are looking for something to work on, or need some expert assistance in debugging a problem or working out a fix to an issue, our community is always eager to help. We hang out on [Slack](https://dwopen.slack.com); look for the [#open_a11y](https://dwopen.slack.com/messages/open_a11y/) channel. To join, visit the IBM developerWorks [Slackin](https://developer.ibm.com/open/slackin/) page.
