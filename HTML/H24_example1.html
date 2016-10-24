@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H24 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H24 Example 1: Providing text alternatives for the area elements of image maps </h1>
+        <!-- Component start -->
+        
+        <img src="Welcome.png" usemap="#map1" alt="Areas in the library. Select an area for more information on that area." /> 
+            <map id="map1" name="map1">
+                <area shape="rect" coords="0,50,150,190" href="reference.html" alt="Reference" />
+                <area shape="rect" coords="150,50,280,175" href="media.html" alt="Audio lab" />
+                </map>
+
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <hr>
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Announces alt text for Welcome, and both image map regions. </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
