@@ -4,6 +4,7 @@ Va11yS source code includes material copied from or derived from:
 Techniques for WCAG 2.0: https://www.w3.org/TR/WCAG20-TECHS/Overview.html
 
 [Copyright](https://www.w3.org/Consortium/Legal/2002/ipr-notice-20021231) ©2016 [World Wide Web Consortium](https://www.w3.org/), ([Massachusetts Institute of Technology](http://www.csail.mit.edu/), [European Research Consortium for Informatics and Mathematics](http://www.ercim.eu/), [Keio University](https://www.keio.ac.jp/en/), [Beihang](http://ev.buaa.edu.cn/). All Rights Reserved. This work is distributed under the W3C® Software License [1] in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
 [1] http://www.w3.org/Consortium/Legal/copyright-software
 
 ##License
