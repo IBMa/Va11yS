@@ -72,5 +72,6 @@ Signed-off-by: John Doe <john.doe@domain.com>
 ```
 If the contribution was derived from a WCAG Technique, please instead add the following sign-off line:
 ```
-Signed-off-by: Jane Doe <jane.do@domain.com>. This contribution was derived by samples provided by WCAG techniques. Please see [Notice of copyright and disclaimers applied](NOTICE.md).
+Signed-off-by: Jane Doe <jane.do@domain.com>. This contribution was derived by samples provided by WCAG techniques. 
 ```
+Please see [Notice of copyright and disclaimers applied](NOTICE.md).
