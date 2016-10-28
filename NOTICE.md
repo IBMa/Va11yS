@@ -1,5 +1,5 @@
 #Notice of derived work
-Va11yS code samples contain code snippets and samples derived from: 
+Va11yS code samples contain source code derived from: 
 
 Techniques for WCAG 2.0: https://www.w3.org/TR/WCAG20-TECHS/Overview.html
 
