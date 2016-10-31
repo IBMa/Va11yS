@@ -1,10 +1,10 @@
-<h1>Contributing to ta11y</h1>
+#Contributing to Va11yS
 
 ### Welcome
 
-We welcome contributions to the ta11y Project in many forms, and there's always plenty to do!
+We welcome contributions to the Va11yS Project in many forms, and there's always plenty to do!
 
-First things first, please review the ta11y Project's [Code of Conduct](CONDUCT.md) before participating. It is important that we keep things civil. 
+First things first, please review the Va11yS Project's [Code of Conduct](CONDUCT.md) before participating. It is important that we keep things civil. 
 
 ### Getting help
 If you are looking for something to work on, or need some expert assistance in debugging a problem or working out a fix to an issue, our community is always eager to help. We hang out on [Slack](https://dwopen.slack.com); look for the [#open_a11y](https://dwopen.slack.com/messages/open_a11y/) channel. To join, visit the IBM developerWorks [Slackin](https://developer.ibm.com/open/slackin/) page.
@@ -13,7 +13,7 @@ If you are looking for something to work on, or need some expert assistance in d
 If you are a user and you find a bug, please submit an [issue](https://github.com/IBMa/ta11y/issues). Please try to provide sufficient information for someone else to reproduce the issue. One of the project's maintainers should respond to your issue within 24 hours. If not, please bump the issue and request that it be reviewed.
 
 ### Fixing issues and working stories
-Review the [issues list](https://github.com/IBMa/ta11y/issues). and find something that interests you. You could also check the ["help wanted"](https://github.com/IBMa/ta11y/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) list. It is wise to start with something relatively straight forward and achievable. Usually there will be a comment in the issue that indicates whether someone has already self-assigned the issue. If no one has already taken it, then add a comment assigning the issue to yourself, eg.: ```I'll work on this issue.```. Please be considerate and rescind the offer in comments if you cannot finish in a reasonable time, or add a comment saying that you are still actively working the issue if you need a little more time.
+Review the [issues list](https://github.com/IBMa/Va11yS/issues). and find something that interests you. You could also check the ["help wanted"](https://github.com/IBMa/Va11yS/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) list. It is wise to start with something relatively straight forward and achievable. Usually there will be a comment in the issue that indicates whether someone has already self-assigned the issue. If no one has already taken it, then add a comment assigning the issue to yourself, eg.: ```I'll work on this issue.```. Please be considerate and rescind the offer in comments if you cannot finish in a reasonable time, or add a comment saying that you are still actively working the issue if you need a little more time.
 
 We are using the [GitHub Flow](https://guides.github.com/introduction/flow/) process to manage code contributions. If you are unfamiliar, please review that link before proceeding.
 
@@ -62,12 +62,16 @@ Projects or sub-projects will be lead by a set of maintainers. New projects can 
 --->
 
 ### Legal stuff
-We have tried to make it as easy as possible to make contributions. This applies to how we handle the legal aspects of contribution. We use the same approach&mdash;the [Developer's Certificate of Origin 1.1 (DCO)](DCO1.1.txt)&mdash;that the Linux&reg; Kernel [community](http://elinux.org/Developer_Certificate_Of_Origin) uses to manage code contributions.
+We have tried to make it as easy as possible to make contributions. This applies to how we handle the legal aspects of an original contribution. We use the same approach&mdash;the [Developer's Certificate of Origin 1.1 (DCO)](DCO1.1.txt)&mdash;that the Linux&reg; Kernel [community](http://elinux.org/Developer_Certificate_Of_Origin) uses to manage code contributions.
 We simply ask that when submitting a pull request, the developer must include a sign-off statement in the pull request description.
 
 Here is an example Signed-off-by line, which indicates that the submitter accepts the DCO:
 
 ```
-Signed-off-by: John Doe <john.doe@hisdomain.com>
+Signed-off-by: John Doe <john.doe@domain.com>
 ```
-
+If the contribution was derived from a WCAG Technique, please instead add the following sign-off line:
+```
+Signed-off-by: Jane Doe <jane.do@domain.com>. This contribution was derived by samples provided by WCAG techniques. 
+```
+Please see [Notice of copyright and disclaimers applied](NOTICE.md).
