@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,27 +5,21 @@
     <meta name="viewport" content="width=device-width, minimal-ui">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>H24 Example 1</title>
+    <title>H37 Example 1</title>
 </head>
 
 <body>
     <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
     <header role="banner">
         <nav role="navigation">
-            <a href="../index.html">Home</a> &gt; <a href="html_techniques.html">HTML Techniques</a>
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">HTML Techniques</a>
         </nav>
         <hr>
     </header>
     <main role="main">
-        <h1>H24 Example 1: Providing text alternatives for the <code>area</code> elements of image maps </h1>
+        <h1>H37 Example 1: Using <code>alt</code> attributes on <code>img</code> elements</h1>
         <!-- Component start -->
-        
-        <img src="img/Welcome.png" usemap="#map1" alt="Areas in the library. Select an area for more information on that area." /> 
-            <map id="map1" name="map1">
-                <area shape="rect" coords="0,50,150,190" href="reference.html" alt="Reference" />
-                <area shape="rect" coords="150,50,280,175" href="media.html" alt="Audio lab" />
-                </map>
-
+            <img src="img/newsletter.png" alt="Free newsletter. Get free recipes, news, and more. Learn more." />
         <!-- Component end -->
     </main>
     <footer role="contentinfo">
@@ -35,20 +28,19 @@
         <!-- Enter any references or sources using the format example below. 
              If this is an original code sample you can just delete the Source: line below
         -->
-        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H24.html" target="_blank">WCAG H24 </a></p>
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H37.html" target="_blank">WCAG H37 </a></p>
         <!-- Enter testing results:  OS, Browser, AT used, and result -->
         <h3>Tested on:</h3>
         <div>
             <ul>
                 <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
                     <ul>
-                        <li>Result: Announces alt text for Welcome, and both image map regions. </li>
+                        <li>Result: Screen reader announces graphic Free newsletter. Get free recipes, news, and more. Learn more.</li>
                     </ul>
                 </li>
             </ul>
         </div>
     </footer>
-
 </body>
 
 </html>
