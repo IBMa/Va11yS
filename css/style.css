@@ -11,6 +11,9 @@ body {
 article, aside, figcaption, figure, footer, header, nav, section {
 	display: block;
 }
+code {
+	font-family: monospace;
+}
 h1, h2, h3, h4 {
 	margin: 1em 0 .5em; 
 	line-height: 1.25;
