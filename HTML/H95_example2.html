@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H95 Example 2</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H95 Example 2: Using the <code>track</code> element to provide captions</h1>
+        <!-- Component start -->
+        <video poster="" controls>
+            <source src="media/ibmresearch.mp4" srclang="en" type="video/mp4">
+            <source src="media/ibmresearch.webm" srclang="fr" type="video/webm">
+            <track src="media/ibmresearch_en.vtt" kind="captions" srclang="en" label="English" default>
+            <track src="media/ibmresearch_fr.vtt" kind="captions" srclang="fr" label="French">
+        </video>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H96.html" target="_blank">WCAG H96 </a></p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Captions display in the default text, which is English.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
