@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, minimal-ui">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>H96 Example 2</title>
+    <title>H95 Example 1</title>
 </head>
 
 <body>
@@ -17,14 +17,11 @@
         <hr>
     </header>
     <main role="main">
-        <h1>H96 Example 2: Using the <code>track</code> element to provide audio descriptions</h1>
+        <h1>H95 Example 1: Using the <code>track</code> element to provide captions</h1>
         <!-- Component start -->
         <video poster="" controls>
             <source src="media/ibmresearch.mp4" srclang="en" type="video/mp4">
-            <source src="media/ibmresearch.webm" srclang="fr" type="video/webm">
-            <track src="media/ibmresearch_en.vtt" kind="descriptions" srclang="en" label="English" default>
             <track src="media/ibmresearch_en.vtt" kind="captions" srclang="en" label="English" default>
-            <track src="media/ibmresearch_fr.vtt" kind="descriptions" srclang="fr" label="French">
         </video>
         <!-- Component end -->
     </main>
@@ -41,7 +38,7 @@
             <ul>
                 <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
                     <ul>
-                        <li>Result: Screen reader announces audio descriptions.</li>
+                        <li>Result: Captions display in the video. </li>
                     </ul>
                 </li>
             </ul>
