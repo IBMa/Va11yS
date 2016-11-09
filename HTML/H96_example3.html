@@ -22,8 +22,9 @@
         <video poster="" controls tabindex="1">
             <source src="media/ibmresearch.webm" type="video/webm">
             <source src="media/ibmresearch.mp4" type="video/mp4">
-            <track id="audesc" src="media/ibmresearch_en.vtt" kind="captions" label="English descriptions" srclang="en-us" default></track>
-		</video>  
+            <track id="audesc" src="media/ibmresearch_en.vtt" kind="descriptions" label="English descriptions" srclang="en-us" default></track>
+	    <track src="media/ibmresearch_en.vtt" kind="captions" srclang="en" label="English" default>
+	</video>  
         <!-- Component end -->
     </main>
     <footer role="contentinfo">
@@ -39,7 +40,7 @@
             <ul>
                 <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
                     <ul>
-                        <li>Result: Captions display.</li>
+                        <li>Result: Screen reader announces audio descriptions</li>
                     </ul>
                 </li>
             </ul>
