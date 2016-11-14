@@ -34,14 +34,24 @@
         <!-- Enter any references or sources using the format example below. 
              If this is an original code sample you can just delete the Source: line below
         -->
-        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H58.html" target="_blank">WCAG H58 </a></p>
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H58.html" target="_blank">WCAG H58 </a> with slight modification, removed "xml:" from the blockquote so the language change works in HTML</p>
         <!-- Enter testing results:  OS, Browser, AT used, and result -->
         <h3>Tested on:</h3>
         <div>
             <ul>
                 <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
                     <ul>
-                        <li>Result: </li>
+                        <li>Result: JAWS switches to German voice.</li>
+                    </ul>
+                </li>
+                <li>Windows 7, Firefox ESR 45.4.0, and NVDA 2016.3
+                    <ul>
+                        <li>Result: NVDA switches to German voice.</li>
+                    </ul>
+                </li>
+                <li>iOS 10.0.2, and VoiceOver
+                    <ul>
+                        <li>Result: VoiceOver switches to German voice.</li>
                     </ul>
                 </li>
             </ul>
