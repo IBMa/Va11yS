@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>H39 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H39 Example 1: Using <code>caption</code> elements to associate data table captions with data tables</h1>
+        <!-- Component start -->
+        <table>
+        <caption>Schedule for the week of 06 March 2016</caption>
+        <tr>
+            <th></th>
+            <th scope="col">06 Mar</th>
+            <th scope="col">07 Mar</th>
+            <th scope="col">08 Mar</th>
+            <th scope="col">09 Mar</th>
+            <th scope="col">10 Mar</th>
+        </tr>
+        <tr>
+            <th scope="row">08:00 AM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+        <tr>
+           <th scope="row">09:00 AM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+        <tr>
+            <th scope="row">10:00 AM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+        <tr>
+            <th scope="row">11:00 AM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+                <tr>
+            <th scope="row">12:00 PM</th>
+                <td>Break</td>
+                <td>Break</td>
+                <td>Break</td>
+                <td>Break</td>
+                <td>Break</td>
+        </tr>
+                <tr>
+            <th scope="row">01:00 PM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+                <tr>
+            <th scope="row">02:00 PM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+                <tr>
+            <th scope="row">03:00 PM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+                <tr>
+            <th scope="row">04:00 PM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+    </table> 
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H39.html" target="_blank">WCAG H39 </a></p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Screen reader announces table with 6 columns and ten rows, and the caption before entering the table.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
