@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H81 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H81 Example 1: Identifying the purpose of a link in a nested list using link text combined with the parent list item
+         under which the list is nested</h1>
+        <!-- Component start -->
+        <ul>
+        <li><a href="royal_palm_hotel.html">Royal Palm Hotel</a>
+        <ul class="horizontal">
+            <li><a href="royal_palm_hotel_map.html">Map</a></li>
+            <li><a href="royal_palm_hotel_photos.html">Photos</a></li>
+            <li><a href="hroyal_palm_hotel_directions.html">Directions</a></li>
+            <li><a href="royal_palm_hotel_reviews.html">Guest reviews</a></li>
+            <li><a href="royal_palm_hotel_book.html">Book now</a></li>
+        </ul>
+        </li>
+        <li><a href="hotel_three_rivers.html">Hotel Three Rivers</a>
+        <ul class="horizontal">
+            <li><a href="hotel_three_rivers_map.html">Map</a></li>
+            <li><a href="hotel_three_rivers_photos.html">Photos</a></li>
+            <li><a href="hotel_three_rivers_directions.html">Directions</a></li>
+            <li><a href="hotel_three_rivers_reviews.html">Guest reviews</a></li>
+            <li><a href="hotel_three_rivers_book.html">Book now</a></li>
+        </ul>
+        </li>
+        </ul>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H81.html" target="_blank">WCAG H81 </a></p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Screen reader announces link text for each item on the list.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
