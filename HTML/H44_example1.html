@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,7 +19,7 @@
     <main role="main">
         <h1>H44 Example 1: Using <code>label</code> elements to associate text labels with form controls</h1>
         <!-- Component start -->
-        <label for="firstname">First name:</label> 
+        <label for="firstname">First name:</label>
         <input type="text" name="firstname" id="firstname" />
         <!-- Component end -->
     </main>
@@ -36,7 +36,22 @@
             <ul>
                 <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
                     <ul>
-                        <li>Result: Screen reader announces first name: edit type a text.</li>
+                        <li>Result: Screen reader announces first name: edit type in text.</li>
+                    </ul>
+                </li>
+                <li>Windows 7, Firefox ESR 45.4.0, and NVDA 2016.3
+                    <ul>
+                        <li>Result: Screen reader announces first name: edit.</li>
+                    </ul>
+                </li>
+                <li>Mac OS X 12.1, Safari, and VoiceOver
+                    <ul>
+                        <li>Result: Screen reader announces first name: edit text.</li>
+                    </ul>
+                </li>
+                <li>iOS 10.1.1, Safari, and VoiceOver
+                    <ul>
+                        <li>Result: Screen reader announces first name: edit text field.</li>
                     </ul>
                 </li>
             </ul>
