@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H71 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H71 Example 1: Providing a description for groups of form controls using <code>fieldset</code> and <code>legend</code> elements</h1>
+        <!-- Component start -->
+         <fieldset>
+            <legend>The play <cite>Hamlet</cite> was written by:</legend>
+            <input type="radio" id="shakesp" name="hamlet" checked="checked" value="a">
+            <label for="shakesp">William Shakespeare</label><br />
+            <input type="radio" id="kipling" name="hamlet" value="b">
+            <label for="kipling">Rudyard Kipling</label><br />
+            <input type="radio" id="gbshaw" name="hamlet" value="c">
+            <label for="gbshaw">George Bernard Shaw</label><br />
+            <input type="radio" id="hem" name="hamlet" value="d">
+            <label for="hem">Ernest Hemingway</label><br />
+            <input type="radio" id="dickens" name="hamlet" value="e">
+            <label for="dickens">Charles Dickens</label>
+        </fieldset> 
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H71.html" target="_blank">WCAG H71 </a></p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Screen reader announces the legend, each radio button text and the number of the radio button (i.e. 1 of 5).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
