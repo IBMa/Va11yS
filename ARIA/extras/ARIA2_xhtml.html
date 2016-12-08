@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1
+    For Accessible Adaptable Applications//EN"
+  "http://www.w3.org/WAI/ARIA/schemata/xhtml-aria-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+          xml:lang="en">
+  <head>
+    <title>Required Input</title>
+  </head>
+  <body>
+    <main role=main>
+    <h1>Required Input</h1>
+    <p>The following form input field must be completed by the user
+    before the form can be submitted.</p>
+    <form action="http://example.com/submit">
+      <p>
+        <label for="test">Test (required)</label>
+        <input name="ariaexample" id="test" aria-required="true" aria-label="Test"/>
+      </p>
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
+    </form>
+  </body>
+  </main>
+</html>
