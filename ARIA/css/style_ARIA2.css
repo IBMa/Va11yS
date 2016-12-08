@@ -1,0 +1,99 @@
+body {
+	margin: 10; 
+	padding: 0; 
+	font-size: 100%; 
+	line-height: 1.5;
+	background-color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvNeueLightforIBM", Arial, sans-serif;
+}
+article, aside, figcaption, figure, footer, header, nav, section {
+	display: block;
+}
+code {
+	font-family: monospace;
+}
+h1, h2, h3, h4 {
+	margin: 1em 0 .5em; 
+	line-height: 1.25;
+	color: #198cbf;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.2em;
+}
+ul, ol {
+	margin: 1em 0; 
+	padding-left: 40px;
+}
+p, figure {
+	margin: 1em 0;
+}
+a img {
+	border: none;
+}
+sup, sub {
+	line-height: 0;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+	width: 75%;
+}
+[aria-required=true] {
+  border: red thin solid;
+}
+
+[role=radio] {
+  display: block;
+  position: relative;
+  margin: 0.5em;
+  padding-left: 20px;
+  border: thin transparent solid;
+}
+
+ul.radiogroup {
+    margin: 0;
+    padding: 0;    
+}
+
+ul.radiogroup  li   {
+    margin: 0;
+    margin-left: 1em;
+    padding: 4px;
+  padding-left: 20px;
+    list-style: none;
+    width: 6em;    
+}
+    
+ul.radiogroup li:hover {
+  padding: 2px 18px;
+  background-position: 2px 4px;
+    border: gray 2px solid;
+}
+
+ul.radiogroup li.selected {
+  padding: 2px 18px;
+  background-position: 2px 4px;
+    border: black 2px solid;
+   }
+
+.offscreen {
+  position: absolute;
+    left: -200em;
+    top: -20em;
+}
+
+li[aria-checked='true'] {
+      background: url('../img/ck-radio.gif') no-repeat 4px 6px;
+}
+
+li[aria-checked='false'] {
+      background: url('../img/unck-radio.gif') no-repeat 4px 6px;
+}

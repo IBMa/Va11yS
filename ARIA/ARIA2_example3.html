@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style_ARIA2.css">
+    <script type="text/javascript" src="extras/radio.js"></script>
+    <title>ARIA2 - Example 3</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> &gt; <a href="aria_techniques.html">ARIA Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>ARIA2 - Example 3: Identifying a required field with the aria-required property</h1>
+        <!-- Component start -->
+        <form action="#" method="post" id="alerts1">
+            <label for="acctnum" data-required="true">Account Number</label>
+            <input size="12" type="text" id="acctnum"
+                aria-required="true" name="acctnum" />
+            
+            <p id="radio_label" data-required="true">Please send an alert when balance exceeds $3,000.</p>
+
+            <ul  id="rg" role="radiogroup" aria-required="true" aria-labelledby="radio_label">
+                <li id="rb1" role="radio" tabindex="0" aria-checked="false">Yes</li>
+                <li id="rb2" role="radio" tabindex="0" aria-checked="false">No</li>
+            </ul>
+            <input type="submit" value="Submit">
+        </form>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA2" target="_blank">ARIA2</a></p>
+        <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
+                    <ul>
+                        <li>Result: Screen reader announces the label, edit required, type text for text field. 
+                            Announces the label of the radio group, then the label of each radio button, the state.
+                            Up or down arrows change the selection. </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

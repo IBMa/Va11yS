@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+ARIA 1.0//EN"
+"http://www.w3.org/WAI/ARIA/schemata/xhtml-aria-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<title>Demonstration of aria-describedby property</title>
+<style type="text/css">
+div.form p { clear:left; margin: 0.3em 0;}
+.left {
+  float:left;
+  width:400px;
+}
+.right {
+  width:100px;
+  text-align:right;
+}
+</style>
+</head>
+<main role="main">
+<body>
+<p>The buttons on this page use the Accessible Rich Internet Applications aria-describedby property
+to provide more detailed information about the button action</p>
+<div class="form">
+<p><span class="left" id="fontDesc" >Select the font faces and sizes to be used on this page</span>
+<span class="right"><button id="fontB" onclick="doAction('Fonts');" aria-describedby="fontDesc">
+Fonts </button></span></p>
+<p><span class="left" id="colorDesc" >Select the colors to be used on this page</span>
+<span class="right"><button id="colorB" onclick="doAction('Colors');" aria-describedby="colorDesc">
+Colors </button></span></p>
+<p><span class="left" id="customDesc" >Customize the layout and styles used on this page</span>
+<span class="right"><button id="customB" onclick="doAction('Customize');" aria-describedby="customDesc">
+Customize </button></span></p>
+</div>
+</body>
+</main>
+</html>
