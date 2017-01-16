@@ -1,0 +1,72 @@
+body {
+	margin: 10; 
+	padding: 0; 
+	font-size: 100%; 
+	line-height: 1.5;
+	background-color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvNeueLightforIBM", Arial, sans-serif;
+}
+article, aside, figcaption, figure, footer, header, nav, section {
+	display: block;
+}
+code {
+	font-family: monospace;
+}
+h1, h2, h3, h4 {
+	margin: 1em 0 .5em; 
+	line-height: 1.25;
+	color: #198cbf;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.2em;
+}
+ul, ol {
+	margin: 1em 0; 
+	padding-left: 40px;
+}
+p, figure {
+	margin: 1em 0;
+}
+a img {
+	border: none;
+}
+sup, sub {
+	line-height: 0;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+	width: 75%;
+}
+#modalOverlay {
+	width:100%;
+	height:100%;
+	z-index:2; 
+	background-color:#000;
+	opacity:0.5;
+	position:fixed;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+}
+[role=alertdialog] {
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 5px;
+	border: thin #000 solid;
+	background-color:#fff;
+	z-index:3;
+	position:fixed;
+	top:25%;
+	left:25%;
+}
