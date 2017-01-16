@@ -152,7 +152,7 @@ function setRadioButton(node, state) {
   }
   else {
     node.setAttribute('aria-checked', 'false') 
-    node.tabIndex = 0;
+    node.tabIndex = -1;
   }
 }
 
