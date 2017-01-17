@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>ARIA9 - Example 3</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> &gt; <a href="aria_techniques.html">ARIA Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>ARIA9 - Example 3: Using aria-labelledby to concatenate a label from several text nodes</h1>
+        <!-- Component start -->
+        <h1>Dinosaur Conference workshops timetable Thursday, 14.  & Friday, 15. March 2013</h1>
+        <table summary="Workshop booking date and times">
+        <caption>Dinosaur Conference workshop booking table</caption>
+        <tbody><tr>
+            <td rowspan="2"></td>
+            <th colspan="2" scope="colgroup">Thursday</th>
+            <th colspan="2" scope="colgroup">Friday</th>
+        </tr>
+
+        <tr>
+            <th scope="col" id="am1">9 to 12 AM</th>
+            <th scope="col" id="pm1">2 to 5 PM</th>
+            <th scope="col" id="am2">9 to 12 AM</th>
+            <th scope="col" id="pm2">2 to 5 PM</th>
+        </tr>
+
+        <tr>
+            <th id="track1" scope="row">track 1</th>
+            <td>
+                <h2 id="title-TM1">The Paleozoic era </h2>
+                <p>2 places left</p>
+                <p><input type="checkbox" id="TM1" aria-labelledby="title-TM1 track1 am1 TM1-att">
+                        <label id="TM1-att" for="TM1">Attend</label></p>
+            </td>
+            
+            <td>
+                <h2 id="title-TA1">The Mesozoic era overview</h2>
+                <p>2 places left</p>
+                <p><input type="checkbox" id="TA1" aria-labelledby="title-TA1 track1 am2 TA1-att">
+                        <label id="TA1-att" for="TA1">Attend</label></p>
+            </td>
+            
+            <td>
+                <h2 id="title-FM1">The Triassic period, rise of the dinosaurs</h2>
+                <p>1 place left</p>
+                <p><input type="checkbox" id="FM1" aria-labelledby="title-FM1 track1 pm1 FM1-att">
+                        <label id="FM1-att" for="FM1">Attend</label></p>
+
+            </td>
+            
+            <td>
+                <h2 id="title-FA1">The Jurassic period</h2>
+                <p>11 places left</p>
+                <p><input type="checkbox" id="FA1" aria-labelledby="title-FA1 track1 pm2 FA1-att">
+                        <label id="FA1-att" for="FA1">Attend</label></p>
+            </td>
+        </tr>
+
+
+        <tr>
+            <th id="track2" scope="row">track 2</th>
+            <td>
+                <h2 id="title-TM2">The Cretaceous period</h2>
+                <p>18 places left</p>
+                <p><input type="checkbox" id="TM2" aria-labelledby="title-TM2 track2 am1 TM2-att">
+                        <label id="TM2-att" for="TM2">Attend</label></p>
+            </td>
+            
+            <td>
+                <h2 id="title-TA2">The end of the dinosaurs</h2>
+                <p>2 places left</p>
+                <p><input type="checkbox" id="TA2" aria-labelledby="title-TA2 track2 am2 TA2-att">
+                        <label id="TA2-att" for="TA2">Attend</label></p>
+            </td>
+            
+            <td>
+                <h2 id="title-FM2">First discoveries of dinosaurs</h2>
+                <p>2 places left</p>
+                <p><input type="checkbox" id="FM2" aria-labelledby="title-FM2 track2 pm1 FM2-att">
+                        <label id="FM2-att" for="FM2">Attend</label></p>
+            </td>
+            
+            <td>
+                <h2 id="title-FA2">Emerging scholarship</h2>
+                <p>19 places left</p>
+                <p><input type="checkbox" id="FA2" aria-labelledby="title-FA2 track2 pm2 FA2-att">
+                        <label id="FA2-att" for="FA2">Attend</label></p>
+            </td>
+        </tr>
+        </tbody>
+        </table>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <div>
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA9" target="_blank">ARIA9</a></p>
+        <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
+                    <ul>
+                        <li>Result: Screenreader announces the column and row number, headings, then checkbox not checked for each checkbox in the table.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
