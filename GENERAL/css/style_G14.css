@@ -1,0 +1,13 @@
+
+tr.t1 td {
+  background-color: lightskyblue;
+  color: black;
+}
+tr.t2 td {
+  background-color: yellow;
+  color: black;
+}
+tr.t3 td {
+  background-color: lightgreen;
+  color: black;
+}
