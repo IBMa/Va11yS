@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style_G5.css">
+    <title>Accessibility Skills Exam</title>
+</head>
+<body>
+<div id="main" role="main">
+<div id="header">
+<h1>Accessibility Skills Exam</h1>
+</div>
+
+<form  id="form1" action=" ">
+    <fieldset aria-required="true">
+    <legend>Which of the following should be added to non-decorative images? *</legend>
+        <input type="radio" name="alt" value="0" id="lang_1" /><label FOR="lang_1">lang</label><br />
+        <input type="radio" name="alt" value="0" id="caption_1" /><label FOR="caption_1">caption</label><br />
+        <input type="radio" name="alt" value="25" id="alt_1" /><label FOR="alt_1">alt</label><br />
+        <input type="radio" name="alt" value="0" id="tab_1" /><label FOR="tab_1">tabindex</label><br />
+    </fieldset>
+    <fieldset aria-required="true">
+    <legend>Which of the following is used to specify the tab order of interactive elements in the code? *</legend>
+        <input type="radio" name="tab" value="0" id="lang_2" /><label FOR="lang_2">lang</label><br />
+        <input type="radio" name="tab" value="0" id="caption_2" /><label FOR="caption_2">caption</label><br />
+        <input type="radio" name="tab" value="0" id="alt_2" /><label FOR="alt_2">alt</label><br />
+        <input type="radio" name="tab" value="25" id="tab_2" /><label FOR="tab_2">tabindex</label><br />
+    </fieldset>
+    <fieldset aria-required="true">
+    <legend>Which of the following should be added to audio content in syncronized media? *</legend>
+        <input type="radio" name="audio" value="0" id="lang_3" /><label FOR="lang_3">lang</label><br />
+        <input type="radio" name="audio" value="25" id="caption_3" /><label FOR="caption_3">caption</label><br />
+        <input type="radio" name="audio" value="0" id="alt_3" /><label FOR="alt_3">alt</label><br />
+        <input type="radio" name="audio" value="0" id="tab_3"/><label FOR="tab_3">tabindex</label><br />
+    </fieldset>
+    <fieldset aria-required="true">
+    <legend>Which of the following is used to indicate the default human language of Web pages? *</legend>
+        <input type="radio" name="lang" value="25" id="lang_4" /><label FOR="lang_4">lang</label><br />
+        <input type="radio" name="lang" value="0" id="caption_4" /><label FOR="caption_4">caption</label><br />
+        <input type="radio" name="lang" value="0" id="alt_4" /><label FOR="alt_4">alt</label><br />
+        <input type="radio" name="lang" value="0" id="tab_4" /><label FOR="tab_4">tabindex</label><br />
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>
+
+
+<p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+</div>
+<script src="quiz.js" type="text/javascript"></script>
+</body>
+</html>
