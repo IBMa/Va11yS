@@ -22,7 +22,7 @@
  <table summary="A example simple data table showing the name of each person, their phone number, fax number, and city"e>
   <caption>Contact Information</caption>
   <tr>
-    <th></th>
+    <td></td>
     <th scope="col">Name</th>
     <th scope="col">Phone#</th>
     <th scope="col">Fax#</th>
@@ -97,30 +97,33 @@
                     </ul>
                 </li>
                 
-                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad 
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
                     <ul>
-                        <li>Result: iOS VoiceOver annouces </li>
+                        <li>Note: iOS VoiceOver annouces in read all mode "table with 5 columns and 4 rows, 
+                            then announces headers and data across each row" as expected</li>
+                        
+                        <li>Result: iOS VoiceOver annouces in table mode incorrecly results on the table</li>
                         <ul>
-                            <li>Contact information table start 4 rows 5 columns.</li>
-                            <li>Phone number sign name row1 column2.</li>
-                            <li>Fax number sign phone number sign column3.</li> 
-                            <li>City Fax number sign column4.</li>
+                            <li>Contact information, table start 4 rows 5 columns.</li>
+                            <li>Phone number sign, name row1 column2.</li>
+                            <li>Fax number sign, phone number sign column3.</li> 
+                            <li>City Fax number sign, column4.</li>
                             <li>City column5.</li>
-                            <li>Name 1 row2 column1.</li>
-                            <li>Phone number sign Joel Ganer column2.</li>
-                            <li>Fax number sign 4122125421 column3 link.</li>
-                            <li>City 4122125400 column4 link.</li>
+                            <li>Name, 1 row2 column1.</li>
+                            <li>Phone number sign, Joel Ganer column2.</li>
+                            <li>Fax number sign, 4122125421 column3, link.</li>
+                            <li>City, 4122125400 column4, link.</li>
                             <li>Pitsbursh column5.</li>
-                            <li>Name 2 row3 column1.</li>
-                            <li>Phone number sign Clive Lloyd column2.</li> 
-                            <li>Fax number sign 4103061420 column3 link.</li>
-                            <li>City 4103065400 column4 link.</li>
+                            <li>Name, 2 row3 column1.</li>
+                            <li>Phone number sign, Clive Lloyd column2.</li> 
+                            <li>Fax number sign, 4103061420 column3 link.</li>
+                            <li>City, 4103065400 column4 link.</li>
                             <li>Baltimore column5.</li>
-                            <li>Name 3 row4 column1.</li>
-                            <li>Phone number sign Gordon Greenidge column2.</li>
-                            <li>Fax number sign 2815646720 column3 link.</li>
-                            <li>City 2815116600 column4 link.</li>
-                            <li>Houston colunn5 table end end contact information end main.</li>
+                            <li>Name, 3 row4 column1.</li>
+                            <li>Phone number sign, Gordon Greenidge column2.</li>
+                            <li>Fax number sign, 2815646720 column3, link.</li>
+                            <li>City, 2815116600 column4, link.</li>
+                            <li>Houston, colunn5 table end, end, contact information, end, main.</li>
                         </ul>
                      </ul>
                 </li>
