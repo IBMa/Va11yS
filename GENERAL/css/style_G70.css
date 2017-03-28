@@ -1,0 +1,7 @@
+#techterms { width: 175px; border: 2px solid #00695C; border-radius: 5px; margin: 20px}
+#techterms img { width: 175px; height: 40px; padding: 0; border: 0; margin: 0 0 -6px 0; }
+#techterms #term { width: 116px; height: 25px; font-size: 16px; padding: 0 5px; border: 1px solid #009688; border-radius: 5px; margin: 8px auto 6px auto; vertical-align: left; }
+#techterms #term:focus { background: #FFFDE7; outline: none; border-color: #004D40; }
+#techterms #submit { width: 30px; height: 25px; color: #FFF; background: #00796B; border: 1px solid #00695C; border-radius: 5px; margin: 2px 0 0 0; vertical-align: left; }
+#techterms #submit:hover { background: #00695C; }
+        
