@@ -50,9 +50,24 @@
             <ul>
                 <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
                     <ul>
-                        <li>Result: Screen reader announces the summary before the table.</li>
+                        <li>Result: Screen reader announces the summary before the table as expected.</li>
                     </ul>
                 </li>
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad 
+                    <ul>
+                        <li>Result: iOS VoiceOver did not read summary table as expected. VoiceOver announces </li>
+                        <ul>
+                            <li>State and first rows1 column1 table start 2 rows 4 columns.</li>
+                            <li>State and sixth column2.</li>
+                            <li>State and fifteenth column3.</li>
+                            <li>Fifteenth and morrision column4.</li>
+                            <li>4 row2 column1 </li>
+                            <li>State and sixth 4 5 column2.</li>
+                            <li>State and fifteenth 4 11 column3.</li>
+                            <li>Fifteenth and morrision 4 19 column4 table end, end, end main.</li>
+                         </ul>
+                     </ul>
+                 </li>
             </ul>
         </div>
     </footer>
