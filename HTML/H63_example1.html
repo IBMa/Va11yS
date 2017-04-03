@@ -19,7 +19,7 @@
     <main role="main">
         <h1>H63 Example 1: Using the <code>scope</code> attribute to associate header cells and data cells in data tables</h1>
         <!-- Component start -->
- <table summary="A example simple data table showing thec name of each person, their phone number, fax number, and city"e>
+ <table summary="A example simple data table showing the name of each person, their phone number, fax number, and city"e>
   <caption>Contact Information</caption>
   <tr>
     <td></td>
@@ -62,8 +62,93 @@
             <ul>
                 <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
                     <ul>
-                        <li>.Result: Screen reader announces table with 5 columns and 4 rows, then announces headers and data across each row.</li>
+                        <li>Result: Screen reader announces table with 5 columns and 4 rows, then announces headers and data across each row.</li>
                     </ul>
+                </li>
+                
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 18
+                    <ul>
+                        <li>Result: Screen reader announces </li>
+                        <ul>
+                            <li>Table with 5 columns and 4 rows, then announces headers and data across each row, 
+                            contact information an example sample data showing name of each person the phone number,
+                            fax number and city, column1, row1, blank.
+                            </li>
+                            <li>Name.</li>
+                            <li>Phone number.</li>
+                            <li>Fax number.</li>
+                            <li>City.</li>
+                            <li>1.</li>
+                            <li>Joel Garner.</li>
+                            <li>412-212-5421.</li>
+                            <li>412-212-5400.</li>
+                            <li>Pittsburgh.</li>
+                            <li>2.</li>
+                            <li>Clive Lloyd.</li>
+                            <li>410-306-1420.</li>
+                            <li>410-306-5400.</li>
+                            <li>Baltimore.</li>
+                            <li>3.</li>
+                            <li>Gordon Greenidge.</li>
+                            <li>281-564-6720.</li>
+                            <li>281-511-6600.</li>
+                            <li>Houston.</li>
+                       </ul>
+                    </ul>
+                </li>
+                
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
+                    <ul>
+                        <li>Result: "iOS VoiceOver did not read content as expected as appy the roter feature 
+                            Column headings read out of order.  VoiceOver annouces:"</li>
+                        <ul>
+                            <li>Contact information.</li>
+                            <li>Phone number sign, name column2.</li>
+                            <li>Fax number sign, phone number sign column3.</li>
+                            <li>City, Fax number sign column4.</li>
+                            <li>City column5.</li>
+                            <li>Name 1 row2 column1.</li>
+                            <li>Phone number sign Joel Garner column2.</li>
+                            <li>Fax number sign 4122125421 column3 link, action available.</li>
+                            <li>City 4122125400 column4 link, action available.</li>
+                            <li>Pittsburgh column5.</li>
+                            <li>Name 2 row3 column1.</li>
+                            <li>Phone number sign Clive Lloyd column2.</li>
+                            <li>Fax number sign 4103061420 column3 link, action available.</li>
+                            <li>City 4103065400 column4 link, action available.</li>
+                            <li>Baltimore column5.</li>
+                            <li>Name 3 row4 column1.</li>
+                            <li>Phone number sign Gordon Greenidge column2.</li>
+                            <li>Fax number sign 2815646720 column3 link, action available.</li>
+                            <li>City 2815116600 column4 link, action available.</li>
+                            <li>Houston, colunn5 table end, end, contact information, end main.</li>
+                        </ul>
+                        
+                        <li>Result: iOS VoiceOver annouces </li>
+                        <ul>
+                            <li>Contact information, table start 4 rows 5 columns.</li>
+                            <li>Name row1 column2.</li>
+                            <li>Phone number sign row1 column3.</li> 
+                            <li>Fax number sign row1 column4.</li>
+                            <li>City row1 column5.</li>
+                            <li>1 row2 column1.</li>
+                            <li>Joel Ganer row2 column2.</li>
+                            <li>4122125421 row2 column3 link.</li>
+                            <li>4122125400 row2 column4 link.</li>
+                            <li>Pitsbursh row2 column5.</li>
+                            <li>2 row3 column1.</li>
+                            <li>Clive Lloyd row3 column2.</li> 
+                            <li>4103061420 row3 column3 link.</li>
+                            <li>4103065400 row3 column4 link.</li>
+                            <li>Baltimore row3 column5.</li>
+                            <li>3 row4 column1.</li>
+                            <li>Gordon Greenidge row4 column2.</li>
+                            <li>2815646720 row4 column3 link.</li>
+                            <li>2815116600 row4 column4 link.</li>
+                            <li>Houston, row4 colunn5 table end, end, contact information, end main.</li>
+
+                        </ul>
+                     </ul>
                 </li>
             </ul>
         </div>
