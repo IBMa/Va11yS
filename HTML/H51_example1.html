@@ -19,7 +19,7 @@
     <main role="main">
         <h1>H51 Example 1: Using table markup to present tabular information</h1>
         <!-- Component start -->
-         <table summary="An example of a simple data table displaying the days of the week, times, and appointments.">
+        <table summary="An example of a simple data table displaying the days of the week, times, and appointments.">
             <tr>
                 <td> </td>
                 <th id="day1">Monday</th>
@@ -44,7 +44,7 @@
                 <td headers="day4 meeting2">Sam again</td>
                 <td headers="day5 meeting2">Leave for San Antonio</td>
             </tr>
-     </table> 
+        </table>
         <!-- Component end -->
     </main>
     <footer role="contentinfo">
@@ -63,10 +63,10 @@
                         <li>Result: Screen reader announces the content of the data table.</li>
                     </ul>
                 </li>
-                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad 
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
                     <ul>
-                        <li>Result: iOS VoiceOver did not read content as expected.  
-                            Column headings read out of order. VoiceOver announces: </li>
+                        <li>Result: iOS VoiceOver did not read content as expected when using swipe left/right gesture. Column
+                            headings read out of order. VoiceOver announces: </li>
                         <ul>
                             <li>Tuesday Monday row1 colum2 table start 3 rows, 6 colums.</li>
                             <li>Wednesday Tuesday colum3.</li>
@@ -79,10 +79,10 @@
                             <li>Thursay doctor Williams column4.</li>
                             <li>Friday Sam again column5.</li>
                             <li>Leave for San Antonio column6 table, end, end, end main.</li>
-                         </ul>
-                     </ul>
-                     <ul>
-                        <li>Result: iOS VoiceOver announces</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>Result: iOS VoiceOver reads as expected when using 2 finger swipe down Read All gesture.</li>
                         <ul>
                             <li>Monday row1 colum2, table start 3 rows, 6 colums.</li>
                             <li>Tuesday row1 colum3.</li>
@@ -95,8 +95,8 @@
                             <li>Doctor Williams row3 column4.</li>
                             <li>Friday Sam again row3 column5.</li>
                             <li>Leave for San Antonio row3 column6 table, end, end main.</li>
-                         </ul>
-                     </ul>
+                        </ul>
+                    </ul>
                 </li>
             </ul>
         </div>
