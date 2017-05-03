@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H93 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">WCAG HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H93 Example 1: Ensuring that <code>id</code> attributes are unique on a Web page</h1>
+        <!-- Component start -->
+        <div id="fruits">
+            Fruits:
+            <ul>
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Pear</li>
+            </ul>
+        </div>
+        <div id="vegetables">
+            Vegetables:
+            <ul>
+                <li>Peas</li>
+                <li>Carrots</li>
+                <li>Spinach</li>
+            </ul>
+        </div>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <hr>
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17.
+                    <ul>
+                        <li>Result: HTML validation does not find duplicate ids.</li>
+                    </ul>
+                </li>
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
+                    <ul>
+                        <li>Result: HTML code shows ids are unique id="fruits" for Fruits and id="vegetable" for Vegetable
+                            in the list on the web page.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

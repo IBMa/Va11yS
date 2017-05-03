@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H78 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">WCAG HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H78 Example 1:  Identifying the purpose of a link using link text combined with its enclosing paragraph</h1>
+        <!-- Component start -->
+        <h3>The final 15</h3>
+            <p>Coming soon to a town near you...the final 15 in the 
+            National Folk Festival lineup.
+            <a href="extras/final15.html">[Read more...]</a>
+            </p>
+
+            <h3>Folk artists get awards</h3>
+            <p>Performers from the upcoming National Folk Festival receive 
+            National Heritage Fellowships. 
+            <a href="extras/nheritage.html">[Read more...]</a>
+            </p>
+            …  
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H78.html" target="_blank">WCAG H78 </a></p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Screen reader announces the text prior to the link and then link text.</li>
+                    </ul>
+                </li>
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
+                    <ul>
+                        <li>Result: iOS VoiceOver announces </li>
+                        <ul>
+                            <li>The final 15</li>
+                            <li>Comming soon to the town near you ellipsis the final 15 in the National Folk Festval lineup.
+                                Read more ellipsis link "activate the link" This is a placeholder page slash dummy file with no real content. 
+                                The purpose of this page is simply to allow the sample's link to complete successfully, main landmark.
+                                Click you browser's back button to return to the sample</li>
+                            <li>Folk artists get awards</li>
+                            <li>Performmer from the upcomming National Folk Festival receive National Heritage Fellowships
+                                Read more ellipsis link "activate the link. This is a placeholder page slash dummy file with no real content. 
+                                The purpose of this page is simply to allow the sample's link to complete successfully, main landmark.
+                                Click you browser's back button to return to the sample.
+                            </li>
+                         </ul>
+                     </ul>
+                </li>  
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

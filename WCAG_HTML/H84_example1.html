@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H84 Example 1</title>
+</head>
+
+<script>
+    function myFunction() {
+        document.getElementById("selection").value = document.getElementById("month").value;
+        document.getElementById("yearInput").value = document.getElementById("year").value;
+        document.getElementById('showMMYY').style.display = "block";
+    }
+</script>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">WCAG HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H84 Example 1: Using a button with a select element to perform an action</h1>
+        <!-- Component start -->
+        Select a Month and Enter a Year:
+        <br>
+        <label for="month">Month:</label>
+            <select name="month" id="month">
+                <option value="January">January</option>
+                <option value="February"> February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select> 
+        <label for="year">Year:</label>
+            <input type="text" name="year" id="year">
+            <input type="button" value="Show" onclick = "myFunction()">
+        <br><br>   
+        <div id="showMMYY" style="display:none;" > 
+            Confirmation:
+            <br>
+            <label for="selection">You have selected the month of </label><input type="text" name="selection" id="selection">
+            <br>
+            <label for="yearInput">You entered the year</label> <input type="text" name="yearInput" id="yearInput">
+        </div>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H84.html" target="_blank">WCAG H84 </a></p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17.
+                    <ul>
+                        <li>Result: No changes are made until the user selects the Show button.</li>
+                    </ul>
+                </li>
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
+                    <ul>
+                        <li>Result: iOS VoiceOver announces
+                            <ul>
+                                <li>Select a Month and enter a Year</li>
+                                <li>Month, Month Januaray, popup button.</li>
+                                <li>January Selected by default on the combo box.</li>
+                                <li>Year text field "enter 2017".</li> 
+                                <li>Show button end, main. "After the click on ths show button".</li>
+                                <li>Confirmation.</li>
+                                <li>You have selected the month of January, text field, double tap to edit.</li>
+                                <li>You enter the year, 2017, text field, end main, double tap to edit.</li> 
+                            </ul>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

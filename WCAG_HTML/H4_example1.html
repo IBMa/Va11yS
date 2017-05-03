@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H4 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> &gt; <a href="html_techniques.html">WCAG HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H4 Example 1: Creating a logical tab order through links, form controls, and objects</h1>
+        <p>A genealogical search form searches for marriage records. The search form includes several input fields for the bride and the groom. The form is marked up using a data table that includes the fields of the groom in the first column and the fields of the bride in the second column. The order in the content is row by row but the author feels it is more logical to navigate the form column by column. This way, all the groom's criteria can be filled in before moving on to the bride's criteria. The <code>tabindex</code> attributes of the input fields are used to specify a tab order that navigates column by column.</p>
+        <!-- Component start -->
+        <form action="#" method="post">
+            <table summary="the first column contains the search criteria 
+            of the groom, the second column the search criteria of 
+            of the bride">
+                <caption>Search for marriage records</caption>
+                <tr>
+                    <th>Search criteria</th>
+                    <th>Groom</th>
+                    <th>Bride</th>
+                </tr>
+                <tr>
+                    <th>First name</th>
+                    <td>
+                        <input type="text" size="30" value="" name="groomfirst" title="First name of the groom" tabindex="1">
+                    </td>
+                    <td>
+                        <input type="text" size="30" value="" name="bridefirst" title="First name of the bride" tabindex="4">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Last name</th>
+                    <td>
+                        <input type="text" size="30" value="" name="groomlast" title="Last name of the groom" tabindex="2">
+                    </td>
+                    <td>
+                        <input type="text" size="30" value="" name="bridelast" title="Last name of the bride" tabindex="5">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Place of birth</th>
+                    <td>
+                        <input type="text" size="30" value="" name="groombirth" title="Place of birth of the groom" tabindex="3">
+                    </td>
+                    <td>
+                        <input type="text" size="30" value="" name="bridebirth" title="Place of birth of the bride" tabindex="6">
+                    </td>
+                </tr>
+            </table>
+            <button type=submit>Search</button>
+        </form>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H4.html" target="_blank">WCAG H4 </a></p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Tabs to each text box in the tabindex order and announces the row and column labels and that it is an editable text field.</li>
+                    </ul>
+                </li>
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
+                    <ul>
+                        <li> Result: iOS VoiceOver announces </li>
+                          <ul>
+                              <li>First name of groom row2 colum2 text field, it's editting, character mode, insertion point start.</li>
+                              <li>Last name of groom row3 colum2 text field,it's editting, character mode, inserstion point start.</li>
+                              <li>Place of birth of groom, row4 colum2 text field, it's editting, character mode, insertsion point start.</li>
+                              <li>First name of bride row2 colum3 text field, it's editting, character mode, insertion point start.</li>
+                              <li>Last name of bride row3 colum3 text field it's editting Character mode, inserstion point start.</li> 
+                              <li>Place of birth of groom row4 colum3 text field, it's edditing table end, character mode, insertion start.</li>
+                          </ul>
+                     </ul>
+                 </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

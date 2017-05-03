@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H51 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">WCAG HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H51 Example 1: A schedule marked up as a simple data table with column and row headers</h1>
+        <!-- Component start -->
+        <table summary="An example of a simple data table displaying the days of the week, times, and appointments.">
+            <tr>
+                <td> </td>
+                <th id="day1">Monday</th>
+                <th id="day2">Tuesday</th>
+                <th id="day3">Wednesday</th>
+                <th id="day4">Thursday</th>
+                <th id="day5">Friday</th>
+            </tr>
+            <tr>
+                <th id="meeting1">8:00-9:00</th>
+                <td headers="day1 meeting1">Meet with Sam</td>
+                <td headers="day2 meeting1"> </td>
+                <td headers="day3 meeting1"> </td>
+                <td headers="day4 meeting1"> </td>
+                <td headers="day5 meeting1"> </td>
+            </tr>
+            <tr>
+                <th id="meeting2">9:00-10:00</th>
+                <td headers="day1 meeting2"> </td>
+                <td headers="day2 meeting2"> </td>
+                <td headers="day3 meeting2">Doctor Williams</td>
+                <td headers="day4 meeting2">Sam again</td>
+                <td headers="day5 meeting2">Leave for San Antonio</td>
+            </tr>
+        </table>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H51.html" target="_blank">WCAG H51</a></p>
+        <p><a href="https://github.com/IBMa/Va11yS/blob/master/HTML/H51_example1.html" target="_blank">View code</a> on GitHub</p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Screen reader announces the content of the data table.</li>
+                    </ul>
+                </li>
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
+                    <ul>
+                        <li>Result: iOS VoiceOver did not read content as expected when using swipe left/right gesture. Column
+                            headings read out of order. VoiceOver announces: </li>
+                        <ul>
+                            <li>Tuesday Monday row1 colum2 table start 3 rows, 6 colums.</li>
+                            <li>Wednesday Tuesday colum3.</li>
+                            <li>Thursday Wednesday column4.</li>
+                            <li>Friday Thursday column5.</li>
+                            <li>Friday column6.</li>
+                            <li>Monday 8 9 row2 column1.</li>
+                            <li>Tuesday meet with Sam column2.</li>
+                            <li>Monday 9 10 row3 colum1.</li>
+                            <li>Thursay doctor Williams column4.</li>
+                            <li>Friday Sam again column5.</li>
+                            <li>Leave for San Antonio column6 table, end, end, end main.</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>Result: iOS VoiceOver reads as expected when using 2 finger swipe down Read All gesture.</li>
+                        <ul>
+                            <li>Monday row1 colum2, table start 3 rows, 6 colums.</li>
+                            <li>Tuesday row1 colum3.</li>
+                            <li>Wednesday row1 column4.</li>
+                            <li>Thursday row1 column5.</li>
+                            <li>Friday row1 column6.</li>
+                            <li>8 9 row2 column1.</li>
+                            <li>Meet with Sam row2 column2.</li>
+                            <li>9 10 row3 colum1.</li>
+                            <li>Doctor Williams row3 column4.</li>
+                            <li>Friday Sam again row3 column5.</li>
+                            <li>Leave for San Antonio row3 column6 table, end, end main.</li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

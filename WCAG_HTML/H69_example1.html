@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H69 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">WCAG HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H69 Example 1: Providing heading elements at the beginning of each section of content</h1>
+        <!-- Component start -->
+        <h1>Search Technical Periodicals</h1>
+            <h2>Search</h2>
+            <form action="search.php">
+            <p><label for="searchInput">Enter search topic: </label>
+            <input type="text" size="30" id="searchInput">
+            <input type="submit" value="Go"></p>
+            </form>
+            <h2>Available Periodicals</h2>
+            <div class="jlinks">
+            <a href="pcoder.com">Professional Coder</a> |
+            <a href="algo.com">Algorithms</a> |
+            <a href="jse.com">Journal of Software Engineering</a>
+            </div>
+            <h2>Search Results</h2>
+            ... search results are returned in this section ... 
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H69.html" target="_blank">WCAG H69 </a></p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Screen reader announces  each heading level and the heading text.</li>
+                    </ul>
+                </li>
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
+                    <ul>
+                        <li>Result: iOS VoiceOver announces </li>
+                            <ul> 
+                                <li>Search Technical Periodicals heading level 1.</li>
+                                <li>Search heading level 2.</li>
+                                <li>Available periodcals heading level 2.</li>
+                             </ul>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

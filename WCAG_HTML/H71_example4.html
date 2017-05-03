@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H71 Example 4</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">WCAG HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H71 Example 4: Providing a description for groups of form controls using <code>fieldset</code> and <code>legend</code> elements</h1>
+        <!-- Component start -->
+        <form action="http://example.com/adduser" method="post">
+            <fieldset>
+                <legend>Residential Address</legend>
+                <label for="raddress">Address: </label>
+                <input type="text" id="raddress" name="raddress" />
+                <label for="rzip">Postal/Zip Code: </label>
+                <input type="text" id="rzip" name="rzip" />
+                ...more residential address information...
+            </fieldset>
+            <fieldset>
+                <legend>Postal Address</legend>
+                <label for="paddress">Address: </label>
+                <input type="text" id="paddress" name="paddress" />
+                <label for="pzip">Postal/Zip Code: </label>
+                <input type="text" id="pzip" name="pzip" />
+                ...more postal address information...
+            </fieldset>
+             <br>
+                <input type="submit" value="Submit">
+        </form>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H71.html" target="_blank">WCAG H71 </a></p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Screen reader announces the legend, each text input field, edit type text for each section.</li>
+                    </ul>
+                </li>
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad 
+                    <ul>
+                        <li>Result: iOS VoiceOver announces </li>
+                        <ul>
+                            <li>Residential address main.</li>
+                            <li>Address text field.</li>
+                            <li>Postal slash zip code text field.</li>
+                            <li>Ellipsis more resdential address information ellipsis.</li>
+                            <li>Post address.</li>
+                            <li>Address text field.</li>
+                            <li>Postal slash zip code text field.</li>
+                            <li>Ellipsis more resdential address information ellipsis.</li>
+                            <li>Sumit button end main.</li>
+                         </ul>
+                     </ul>
+             </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

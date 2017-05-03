@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style_G18.css">
+    <title>G18 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner" id="primary">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> &gt; <a href="general_techniques.html">WCAG General Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>G18 Example 1: Ensuring that a contrast ratio of at least 4.5:1 exists between text 
+            (and images of text) and background behind the text</h1>
+        <!-- Component start -->
+        <div id="bar">
+                <img src="img/grey-logo.jpg" alt="Company Logo">A black background is chosen so that light colored letters that 
+                match the company logo can be used.
+       </div>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/general.html#G18" target="_blank">WCAG G18</a></p>
+        <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
+                    <ul>
+                        <li>Result: The contrast ratio for the light grey text on a black background is: 14.0:1.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

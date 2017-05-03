@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>ARIA20 - Example 3</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main">
+            <a href="../index.html">Home</a> &gt; <a href="aria_techniques.html">WCAG ARIA Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>ARIA20 - Example 3: Using the region role to identify a region of the page</h1>
+        <!-- Component start -->
+
+        <div role="region" aria-label="weather sticker">
+        <span style="display: block !important; width: 320px; text-align: center; font-family: sans-serif; font-size: 12px;">
+            <a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:73301.1.99999&bannertypeclick=wu_clean2day" title="Austin, Texas Weather Forecast" target="_blank">
+            <img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_cond&airportcode=KATT&ForcedCity=Austin&ForcedState=TX&zip=73301&language=EN" alt="Find more about Weather in Austin, TX" width="300" /></a><br>
+            <a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:73301.1.99999&bannertypeclick=wu_clean2day" title="Get latest Weather Forecast updates" style="font-family: sans-serif; font-size: 12px" target="_blank">Click for weather forecast</a></span>
+        </div>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <div>
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA20" target="_blank">ARIA20</a></p>
+        <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
+                    <ul>
+                        <li>Result: Screenreader announces the weather sticker region.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

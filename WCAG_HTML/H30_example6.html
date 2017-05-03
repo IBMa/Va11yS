@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H30 Example 6</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> &gt; <a href="html_techniques.html">WCAG HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H30 Example 6: Providing link text that describes the purpose of a link for anchor elements</h1>
+        <!-- Component start -->
+        <p>
+            <a href="2009mycorp_report.pdf">MyCorp 2009 Annual Report (pdf)</a>
+            <br />
+            <a href="2009mycorp_budget.xls">MyCorp 2009 Annual Budget (Excel)</a>
+        </p>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H30.html" target="_blank">WCAG H30 </a></p>
+        <p>The “MyCorp” company’s annual report is made available on the corporate website as a PDF file, and the annual corporate budget is made available as an Excel file on the web site.</p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Screen reader announces link text.</li>
+                    </ul>
+                </li>
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
+                    <ul>
+                        <li>Result: iOS VoiceOver announces </li>
+                        <ul>
+                            <li>MyCorp 2009 annual report pfd link.</li>
+                            <li>MyCopr 2009 annula bugget exel link, end main.</li>
+                        </ul>
+                   </ul>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

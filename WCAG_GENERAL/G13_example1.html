@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/style_G14.css">
+    <script src="extras/blink.js" type='text/javascript'></script>-->
+    <title>G13 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> &gt; <a href="general_techniques.html">WCAG General Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>G13 Example 1: Describing what will happen before a change to a form control that causes a change of context to occur is made</h1>
+        <!-- Component start -->
+
+        <fieldset>
+            <legend>Select a radio button to change the language of the web page:</legend>
+                <input type="radio" name="Lang" id="English">
+                <label for="English">English</label>
+                <input type="radio" name="Lang" id="French">
+                <label for="French">French</label>
+                <input type="radio" name="Lang" id="Spanish">
+                <label for="Spanish">Spanish</label>
+        </fieldset> 
+
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/general.html#G13" target="_blank">WCAG G13</a></p>
+        <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
+                    <ul>
+                        <li>Result: Screen reader reads the legend, then the label and status for each radio button. </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

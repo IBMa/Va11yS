@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>aria-autocomplete</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="aria_techniques.html">WCAG ARIA Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>aria-autocomplete</h1>
+        <!-- Component start -->
+        <p><a href="http://oaa-accessibility.org/example/10/" target="_blank">External resource</a> for testing aria-autocomplete</p>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <hr>
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>iOS 9.3 and VoiceOver
+                    <ul>
+                        <li>Mostly works: Voiceover reads "button", which is not a clear indication that this is an autocomplete field. When the user activates the button, VoiceOver reads "combo box". The keyboard appears on the screen, and as the user types, values change in the combo box and the default value is read automatically during typing. There are a few cases when several items begin with the same letter, the next item is not read as the user types.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

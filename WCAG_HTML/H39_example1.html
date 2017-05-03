@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H39 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> > <a href="html_techniques.html">WCAG HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H39 Example 1: Using <code>caption</code> elements to associate data table captions with data tables</h1>
+        <!-- Component start -->
+        <table>
+        <caption>Schedule for the week of 06 March 2016</caption>
+        <tr>
+            <th></th>
+            <th scope="col">06 Mar</th>
+            <th scope="col">07 Mar</th>
+            <th scope="col">08 Mar</th>
+            <th scope="col">09 Mar</th>
+            <th scope="col">10 Mar</th>
+        </tr>
+        <tr>
+            <th scope="row">08:00 AM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+        <tr>
+           <th scope="row">09:00 AM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+        <tr>
+            <th scope="row">10:00 AM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+        <tr>
+            <th scope="row">11:00 AM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+                <tr>
+            <th scope="row">12:00 PM</th>
+                <td>Break</td>
+                <td>Break</td>
+                <td>Break</td>
+                <td>Break</td>
+                <td>Break</td>
+        </tr>
+                <tr>
+            <th scope="row">01:00 PM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+                <tr>
+            <th scope="row">02:00 PM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+                <tr>
+            <th scope="row">03:00 PM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+                <tr>
+            <th scope="row">04:00 PM</th>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+                <td>Meeting</td>
+        </tr>
+    </table> 
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H39.html" target="_blank">WCAG H39 </a></p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Screen reader announces table with 6 columns and ten rows, and the caption before entering the table.</li>
+                    </ul>
+                </li>
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
+                    <ul> 
+                        <li>Result: iOS VoiceOver announces</li>
+                           <ul>
+                               <li>Schedule for the week of 06 March 2016, table start, 10 rows, 6 columns.</li>
+                               <li>March 6 row1 column2, March 7 colum3, March 8 colum4, March 9 column5, March 10 column6.</li>
+                               <li>8AM row2 column1, March 6 meeting column2, March 7 meeting column3, March 8 meeting column4, March 9 meeting column5, March 10 meeting column6.</li>
+                               <li>9AM row3 column1, March 6 meeting column2, March 7 meeting column3, March 8 meeting column4, March 9 meeting column5, March 10 meeting column6.</li>
+                               <li>10AM row4 column1, March 6 meeting column2, March 7 meeting column3, March 8 meeting column4, March 9 meeting column5, March 10 meeting column6.</li>
+                               <li>11AM row5 column1, March 6 meeting column2, March 7 meeting column3, March 8 meeting column4, March 9 meeting column5, March 10 meeting column6.</li>
+                               <li>12PM row6 column1, March 6 break column2, March 7 break column3, March 8 break column4, March 9 break column5, March 10 break column6.</li>
+                               <li>1PM row7 column1, March 6 meeting column2, March 7 meeting column3, March 8 meeting column4, March 9 meeting column5, March 10 meeting column6.</li>
+                               <li>2PM row8 column1, March 6 meeting column2, March 7 meeting column3, March 8 meeting column4, March 9 meeting column5, March 10 meeting column6.</li>
+                               <li>3PM row9 column1, March 6 meeting column2, March 7 meeting column3, March 8 meeting column4, March 9 meeting column5, March 10 meeting column6.</li>
+                               <li>4AM row10 column1, March 6 meeting column2, March 7 meeting column3, March 8 meeting column4, March 9 meeting column5, March 10 meeting column6.</li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

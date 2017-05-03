@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_G14.css">
+    <title>G14 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> &gt; <a href="general_techniques.html">WCAG General Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>G14 Example 1: Ensuring that information conveyed by color differences is also available in text</h1>
+        <!-- Component start -->
+        <h2>Conference Schedule</h2>
+        Tracks: 
+            <ul>
+                <li>T1 - Accessibility</li> 
+                <li>T2 - Open Source</li> 
+                <li>T3 - Education</li>
+            </ul>
+        <table>
+	        <tr>
+                <th>Time</th> 
+                <th>Session / Track</th>
+                <th>Presenter</th>
+                <th>Location</th>
+	        </tr>   
+            <tr class="t1">
+                <td>09:00 AM</td>
+                <td>Accessibility Standards: T1</td>
+                <td>Peter Pan<br /></td>
+                <td>01-22D</td>
+            </tr>
+           <tr class="t1">
+                <td>01:00 PM</td>
+                <td>Web Content Accessibility Guidelines: T1</td>
+                <td>Tinker Bell<br /></td>
+                <td>01-24A</td>
+            </tr>
+            <tr class="t2">
+                <td>08:00 AM</td>
+                <td>Va11yS: T2</td>
+                <td>Red Ridinghood<br /></td>
+                <td>01-35C</td>
+            </tr>
+            <tr class="t2">
+                <td>02:00 PM</td>
+                <td>AQG: T2</td>
+                <td>Mad Hatter<br /></td>
+                <td>02-21D</td>
+            </tr>
+            <tr class="t3">
+                <td>10:00 AM</td>
+                <td>AngularJS Development: T3</td>
+                <td>Humpty Dumpty<br /></td>
+                <td>03-22D</td>
+            </tr>
+            <tr class="t3">
+                <td>03:00 PM</td>
+                <td>React Development: T3</td>
+                <td>Jack Spratt<br /></td>
+                <td>02-25C</td>
+            </tr>
+        </table>
+
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/general.html#G14" target="_blank">WCAG G14</a></p>
+        <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
+                    <ul>
+                        <li>Result: Track is identified by the track ID as well as the color. </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
