@@ -24,10 +24,10 @@ failLevels:
 # Default: violation, potentialviolation, recommendation, potentialrecommendation, manual
 reportLevels:
     - violation
-    - potentialviolation
-    - recommendation
-    - potentialrecommendation
-    - manual
+    #- potentialviolation
+    #- recommendation
+    #- potentialrecommendation
+    #- manual
 
 # Optional - Which type should the results be outputted to
 #   outputFormat: json
@@ -58,3 +58,4 @@ outputFolder: results
 # Default: false
 checkHiddenContent: false
 
+authToken: 9b3b4004-4251-4729-9c10-763277b24902/7d35cac4-b057-4cba-a81d-cffb4a29ccb8
