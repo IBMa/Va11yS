@@ -57,3 +57,4 @@ outputFolder: results
 # false --> Don't scan hidden content
 # Default: false
 checkHiddenContent: false
+
