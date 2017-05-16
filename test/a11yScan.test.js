@@ -25,8 +25,12 @@ describe("Accessibility Test", function () {
                         // matches the same label which was provided.
                         var returnCode = AAT.assertCompliance(results);
 
+                        if (returnCode !== 0) {
+                            console.log(AAT.stringifyResults(results));
+                        }
+
                         // In the case that the violationData is not defined then trigger an error right away.
-                        expect(returnCode).toBe(0, "Scanning " + testFile + " failed." + JSON.stringify(results));
+                        expect(returnCode).toBe(0, "Scanning " + testFile + " failed.");
 
                         // Mark the testcases as done, when using jasmine as the test framework.
                         done();
