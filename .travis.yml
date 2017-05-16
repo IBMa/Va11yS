@@ -7,7 +7,7 @@ addons:
   #firefox: "45.4.0esr"
   apt:
     packages:
-    - google-chrome-stable
+      - google-chrome-stable
 
 # Run the following before the core script is run
 before_script:
