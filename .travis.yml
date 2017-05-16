@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "7"
+
+# Additional addons that are need to be installed
+addons:
+  #firefox: "45.4.0esr"
+  apt:
+    packages:
+    - google-chrome-stable
+
+# Run the following before the core script is run
+before_script:
+  - printf "authToken: ${A11Y_AUTH_TOKEN}" >> .aat.yml
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+
+script:
+  - npm test
