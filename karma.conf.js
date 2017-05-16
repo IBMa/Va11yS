@@ -23,6 +23,7 @@ module.exports = function(config) {
     // list of files to exclude
     exclude: [
       'node_modules/**/*.html',
+      'HTML5/**/*.html'
     ],
 
 
