@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script>
-        function validate(phone){
-            var num = phone.value.replace(/[^\d]/g,'');
-                if(num.length != 10) {
-                alert('You must enter a valid 10 digit phone number');                   
-                } 
-        }   
-    </script>    
+        function validate(phone) {
+            var num = phone.value.replace(/[^\d]/g, '');
+            if (num.length != 10) {
+                alert('You must enter a valid 10 digit phone number');
+            }
+        }
+    </script>
     <title>G85 Example 1</title>
 </head>
 
-<body onload='document.phonebook.phone.focus()'>
+<body onload="document.phonebook.phone.focus()">
     <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
     <header role="banner" id="primary">
         <nav role="navigation">
@@ -25,12 +25,14 @@
         <hr>
     </header>
     <main role="main">
-        <h1>G85 Example 1: When a user inputs invalid data on a form field an alert dialog appears upon exiting the field or submitting the form</h1>
+        <h1>G85 Example 1: When a user inputs invalid data on a form field an alert dialog appears upon exiting the field or
+            submitting the form</h1>
         <!-- Component start -->
         <form name="phonebook" action="#">
             <p><label for="phone">Enter a 10 digit phone Number: </label> <input type="text" size="20" name="phone" id="phone">
             </p>
             <input type="submit" value="Submit" onclick="validate(phone)">
+        </form>
         <!-- Component end -->
     </main>
     <footer role="contentinfo">
@@ -39,11 +41,12 @@
         <!-- Enter any references or sources using the format example below. 
              If this is an original code sample you can just delete the Source: line below
         -->
-        <p>Source:
-            <ul> 
-            <li><a href="https://www.w3.org/TR/WCAG20-TECHS/general.html#G85" target="_blank">WCAG G85: Providing a text description when user input falls 
+        <h3>Source:</h3>
+        <p>
+            <ul>
+                <li><a href="https://www.w3.org/TR/WCAG20-TECHS/general.html#G85" target="_blank">WCAG G85: Providing a text description when user input falls 
             outside the required format or values</a></li>
-            <li><a href="https://github.com/IBMa/Va11yS/blob/master/GENERAL/G85_example1.html" target="_blank">Source Code on GitHub</a></li>
+                <li><a href="https://github.com/IBMa/Va11yS/blob/master/WCAG_GENERAL/G85_example1.html" target="_blank">Source Code on GitHub</a></li>
             </ul>
         </p>
         <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
@@ -52,7 +55,8 @@
             <ul>
                 <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
                     <ul>
-                        <li>Result: An alert dialog appears upon exiting the field or submiting the form if the data is not in the correct format.
+                        <li>Result: An alert dialog appears upon exiting the field or submiting the form if the data is not in
+                            the correct format.
                         </li>
                     </ul>
                 </li>
@@ -62,5 +66,3 @@
 </body>
 
 </html>
-
- 
