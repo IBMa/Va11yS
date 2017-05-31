@@ -4,10 +4,10 @@
 <head>
     <meta name="viewport" content="width=device-width, minimal-ui">
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">    
-    <script LANGUAGE="JavaScript" type="text/javascript">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script language="JavaScript" type="text/javascript">
         function displaytext() {
-            DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=400,height=200')
+            DispWin = window.open('', 'NewWin', 'toolbar=no,status=no,width=400,height=200')
             message = "<ul><li><b>First Name: </b>" + document.phonebook.first.value;
             message += "<li><b>Last Name: </b>" + document.phonebook.last.value;
             message += "<li><b>Phone Number: </b>" + document.phonebook.phone.value;
@@ -36,7 +36,8 @@
             </p>
             <p><label for="phone">Phone Number: </label> <input type="text" size="15" name="phone" id="phone">
             </p>
-            <input type="submit" value="Submit" onClick="displaytext();">
+            <input type="submit" value="Submit" onclick="displaytext();">
+        </form>
 
         <!-- Component end -->
     </main>
@@ -46,10 +47,11 @@
         <!-- Enter any references or sources using the format example below. 
              If this is an original code sample you can just delete the Source: line below
         -->
-        <p>Source:
-            <ul> 
-            <li><a href="https://www.w3.org/TR/WCAG20-TECHS/general.html#G80" target="_blank">WCAG G80: Providing a submit button to initiate a change of context</a></li>
-            <li><a href="https://github.com/IBMa/Va11yS/blob/master/GENERAL/G80_example1.html" target="_blank">Source Code on GitHub</a></li>
+        <h3>Source:</h3>
+        <p>
+            <ul>
+                <li><a href="https://www.w3.org/TR/WCAG20-TECHS/general.html#G80" target="_blank">WCAG G80: Providing a submit button to initiate a change of context</a></li>
+                <li><a href="https://github.com/IBMa/Va11yS/blob/master/WCAG_GENERAL/G80_example1.html" target="_blank">Source Code on GitHub</a></li>
             </ul>
         </p>
         <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
