@@ -1,0 +1,68 @@
+{
+    "issueMessages": {
+        "messages": {
+            "wcag20.tech.h25.docHasTitle": "There must be a non-empty title element in the head of the document.",
+            "rpt.g1.styleTrigger": "Web pages must be readable without requiring style sheets or equivalent facilitation is provided.",
+            "wcag20.tech.aria.OrphanedContent": "All content must reside within a WAI-ARIA landmark or labelled region role.",
+            "rpt.g25.blockquoteHasCite": "Make sure BLOCKQUOTE is used only for quotations, not indentation.",
+            "rpt.g112.aTargetAndText": "Inform the user that clicking on certain links or areas of a window will open pop-up windows or change the active window."
+        },
+        "lang": "en-us"
+    },
+    "reports": [
+        {
+            "issues": [
+                {
+                    "severityCode": "eISHigh",
+                    "messageCode": "wcag20.tech.h25.docHasTitle",
+                    "ruleId": "273",
+                    "help": "idhi_accessibility_check_g273.html",
+                    "msgArgs": [],
+                    "xpath": "/html[1]",
+                    "snippet": "<html lang=\"en\">",
+                    "bounds": {
+                        "left": 0,
+                        "top": 0,
+                        "height": 1716,
+                        "width": 1584
+                    },
+                    "level": "violation"
+                },
+                {
+                    "severityCode": "eISHigh",
+                    "messageCode": "wcag20.tech.aria.OrphanedContent",
+                    "ruleId": "1157",
+                    "help": "idhi_accessibility_check_g1157.html",
+                    "msgArgs": [],
+                    "xpath": "/html[1]/body[1]/link[1]",
+                    "snippet": "<link href=\"../css/style.css\" type=\"text/css\" rel=\"stylesheet\">",
+                    "bounds": {
+                        "left": 0,
+                        "top": 0,
+                        "height": 1716,
+                        "width": 1584
+                    },
+                    "level": "violation"
+                }
+            ],
+            "frameIdx": 0,
+            "frameTitle": "H58 Example 1"
+        }
+    ],
+    "summary": {
+        "counts": {
+            "violation": 2
+        },
+        "scanTime": 0,
+        "policies": [
+            "IBM_Accessibility_2017_02"
+        ],
+        "reportLevels": [
+            "violation"
+        ],
+        "startScan": 1496418521512
+    },
+    "scanID": "320c6d0b-7937-4659-9a07-6f50598a165e",
+    "toolID": "@ibma/karma-ibma-v2.0.3",
+    "label": "WCAG_HTML/H58_example1.html"
+}
