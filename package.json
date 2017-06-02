@@ -1,0 +1,32 @@
+{
+  "name": "va11ys",
+  "version": "1.0.0",
+  "description": "Verified Accessibility Samples",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IBMa/Va11yS.git"
+  },
+  "keywords": [
+    "a11y",
+    "accessiblity"
+  ],
+  "author": "IBMa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IBMa/Va11yS/issues"
+  },
+  "homepage": "https://github.com/IBMa/Va11yS#readme",
+  "devDependencies": {
+    "@ibma/karma-ibma": "https://aat.mybluemix.net:/dist/karma-ibma.tgz",
+    "jasmine-core": "^2.6.1",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-html2js-preprocessor": "^1.1.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-spec-reporter": "0.0.31"
+  }
+}
