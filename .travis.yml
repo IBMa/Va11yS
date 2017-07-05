@@ -17,6 +17,7 @@ before_script:
   - "echo \"authToken: ${A11Y_AUTH_TOKEN}\" >> .aat.yml"
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
+  - cat .aat.yml
 
 script:
   - npm test
