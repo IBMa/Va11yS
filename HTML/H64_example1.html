@@ -40,14 +40,18 @@
                 </li>
                 <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
                     <ul>
-                        <li>Result: Activate Simple frameset document link, the  iOS VoiceOver announces 
-                           <ul>
-                               <li>1 list start 1.</li>
-                               <li>Document link, action availble.</li>
-                               <li>2.</li>
-                               <li>Libary link list end, action availble</li>
-                     </ul>
+                        <li>Result: After navigating to the Simple frameset document link, VoiseOver announces the content in left navigation " list start, 1 Document link, 2 Libary link, list end" 
+                            and then the content in frame "This is a placehoder page / dummy file for the document link. 
+                            The puprose of this page is simply to allow the sample's link to complete successfully.", main landmark.</li>
+                    </ul>
                 </li>
+                <li>Android 7.1.2; Pixel, Chrome 55.0.2883.91, and TalkBack Version: 5.0.4.3.
+                     <ul>
+                        <li>Result: After navigating to the Simple frameset document link, TalkBack announces the content in left navigation, main menu, 1 inlist, level1, 2 items, Document, 2 Libery, document out of list, 
+                            and then content in the frame"This is a placehoder page / dummy file for the document link. 
+                            The puprose of this page is simply to allow the sample's link to complete successfully." </li>
+                     </ul>
+                </li>    
             </ul>
         </div>
     </footer>
