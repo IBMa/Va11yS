@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, minimal-ui">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style_ARIA21-2.css">
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/JavaScript" src="extras/valcheck.js"></script>
     <title>ARIA21 - Example 2</title>
 </head>
@@ -21,28 +21,28 @@
     <main role="main">
         <h1>ARIA21 - Example 2: Using Aria-Invalid to Indicate An Error Field</h1>
         <!-- Component start -->
-        <form action="#" method="post"  id="login3" onsubmit="return errorAlert2()">
+        <form action="#" method="post" id="login3" onsubmit="return errorAlert2()">
 
-        <div class="control">
-        <p><label for="pin4">Personal Id. Number (PIN) - 4 digits: [*]</label> 
-        <input type="text" size="4" name="pin4" id="pin4" /></p>
-        </div>
-        <div class="control">
-        <p><label for="email">Email address: [*]</label> 
-        <input type="text" name="email" id="email" /> </p> 
-        </div>
-        <div class="control">
-        <p><label for="lname">Last name:  [*]</label>
-        <input type="text" name="lname" id="lname" size="12" /> </p> 
-        </div>
-        <div class="control">
-        <p><label for="startDt">Desired policy start date (MM / DD / YYYY)</label>
-        <input type="text" name="startDt" id="startDt" size="12" /> </p> 
-        </div>
-        <p><input type="hidden" name="spanval" id="spanval" />
+            <div class="control">
+                <p><label for="pin4">Personal Id. Number (PIN) - 4 digits: [*]</label>
+                    <input type="text" size="4" name="pin4" id="pin4" /></p>
+            </div>
+            <div class="control">
+                <p><label for="email">Email address: [*]</label>
+                    <input type="text" name="email" id="email" /> </p>
+            </div>
+            <div class="control">
+                <p><label for="lname">Last name:  [*]</label>
+                    <input type="text" name="lname" id="lname" size="12" /> </p>
+            </div>
+            <div class="control">
+                <p><label for="startDt">Desired policy start date (MM / DD / YYYY)</label>
+                    <input type="text" name="startDt" id="startDt" size="12" /> </p>
+            </div>
+            <p><input type="hidden" name="spanval" id="spanval" />
 
-        <input type="submit" value="Login" id="next_btn" name="next_btn" /></p>
-        </form>       
+                <input type="submit" value="Login" id="next_btn" name="next_btn" /></p>
+        </form>
         <!-- Component end -->
     </main>
     <footer role="contentinfo">
@@ -52,22 +52,24 @@
              If this is an original code sample you can just delete the Source: line below
         -->
         <div>
-        <p>Source:</p> 
-        <ul>
-            <li><a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA21" target="_blank">ARIA21</a></p></li>
-            <li><a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA21/form-alert3.html" target="_blank">Forms: Using aria-invalid to identify failed fields </a></p></li>
-        </ul>
-        <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
-        <h3>Tested on:</h3>
-        <div>
+            <p>Source:</p>
             <ul>
-                <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
-                    <ul>
-                        <li>Result: Screenreader announces the error messages while tabbing back through the required fields.</li>
-                    </ul>
+                <li><a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA21" target="_blank">ARIA21</a>
+                </li>
+                <li><a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA21/form-alert3.html" target="_blank">Forms: Using aria-invalid to identify failed fields </a>
                 </li>
             </ul>
-        </div>
+            <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
+            <h3>Tested on:</h3>
+            <div>
+                <ul>
+                    <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
+                        <ul>
+                            <li>Result: Screenreader announces the error messages while tabbing back through the required fields.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
