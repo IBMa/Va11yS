@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/slider.css">
     <script src="extras/slider.js" type="text/javascript"></script>
     <script>
-      sourceCode.add('sc1', 'example1')
-      sourceCode.make()
+        sourceCode.add('sc1', 'example1')
+        sourceCode.make()
     </script>
     <title>ARIA16 - Example 2</title>
 </head>
@@ -26,22 +26,17 @@
         <h1>ARIA16 - Example 2: Using aria-labelledby to provide a name for user interface controls</h1>
         <!-- Component start -->
         <div id="example2" class="example" role="region" aria-label="example_slider2">
-        <div id="idSliders">
-            <div id="idDays" class="label">Please select the number of days for your trip:</div>
-            <div class="aria-widget-slider">
-            <div class="rail" style="width: 300px">
-                <div id="idDaysValue"
-                    role="slider"
-                    class="thumb"
-                    aria-valuemin="0"
-                    aria-valuenow="0"
-                    aria-valuemax="255"
-                    aria-labelledby="idDays"></div>
-            </div>
-            <div class="value">0</div>
+            <div id="idSliders">
+                <div id="idDays" class="label">Please select the number of days for your trip:</div>
+                <div class="aria-widget-slider">
+                    <div class="rail" style="width: 300px">
+                        <div id="idDaysValue" role="slider" class="thumb" aria-valuemin="0" aria-valuenow="0" aria-valuemax="255" aria-labelledby="idDays"></div>
+                    </div>
+                    <div class="value">0</div>
+                </div>
             </div>
         </div>
-        <!-- Component end -->
+            <!-- Component end -->
     </main>
     <footer role="contentinfo">
         <!-- Enter references and testing results in this footer section -->
@@ -50,22 +45,22 @@
              If this is an original code sample you can just delete the Source: line below
         -->
         <div>
-        <p>Source: 
-            <ul>
-               <li><a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA16" target="_blank">ARIA16</a></li>
-               <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/slider-1.html" target="_blank">ARIA Example: Horizontal Sliders using aria-valuenow</a></li>
-            </ul>
-        <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
-        <h3>Tested on:</h3>
-        <div>
-            <ul>
-                <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
+            <p>Source:</p>
+                <ul>
+                    <li><a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA16" target="_blank">ARIA16</a></li>
+                    <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/slider-1.html" target="_blank">ARIA Example: Horizontal Sliders using aria-valuenow</a></li>
+                </ul>
+                <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
+                <h3>Tested on:</h3>
+                <div>
                     <ul>
-                        <li>Result: Screenreader announces the aria-label referenced by aria-labelledby.</li>
+                        <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
+                            <ul>
+                                <li>Result: Screenreader announces the aria-label referenced by aria-labelledby.</li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-        </div>
+                </div>
         </div>
     </footer>
 </body>

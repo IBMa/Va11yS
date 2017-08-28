@@ -18,22 +18,17 @@
         <hr>
     </header>
     <main role="main">
-        <h1>ARIA1 - Example 4 (Tooltip): Using the aria-describedby property to provide a descriptive label for user interface controls</h1>
+        <h1>ARIA1 - Example 4 (Tooltip): Using the aria-describedby property to provide a descriptive label for user interface
+            controls</h1>
         <!-- Component start -->
-        <html lang="en-us">
-
-        <body>
 
         <div id="container">
-        <h2>Create Account</h2>
+            <h2>Create Account</h2>
             <div class="text">
-            <label for="first">First Name:</label>
+                <label for="first">First Name:</label>
 
-            <input type="text" class="tooltip" id="first" name="first" size="20"
-                onmouseover="tooltipMouse(this);"
-                onfocus="tooltipFocus(this);"
-                aria-required="false"
-                title="Your first name is optional." />
+                <input type="text" class="tooltip" id="first" name="first" size="20" onmouseover="tooltipMouse(this);" onfocus="tooltipFocus(this);"
+                    aria-required="false" title="Your first name is optional." />
                 <div id="tooltip"></div>
             </div>
         </div>
@@ -52,7 +47,8 @@
             <ul>
                 <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
                     <ul>
-                        <li>Result: When tabbing to the text input field, the screen reader announces First Name: edit, type text, and the descriptive text for the input field.</li>
+                        <li>Result: When tabbing to the text input field, the screen reader announces First Name: edit, type
+                            text, and the descriptive text for the input field.</li>
                     </ul>
                 </li>
             </ul>
