@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>H30 Example 1</title>
+</head>
+
+<body>
+    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
+    <header role="banner">
+        <nav role="navigation">
+            <a href="../index.html">Home</a> &gt; <a href="html_techniques.html">WCAG HTML Techniques</a>
+        </nav>
+        <hr>
+    </header>
+    <main role="main">
+        <h1>H30 Example 1: Providing link text that describes the purpose of a link for anchor elements</h1>
+        <!-- Component start -->
+        <a href="routes.html">Current routes at Boulders Climbing Gym</a>
+        <!-- Component end -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Enter references and testing results in this footer section -->
+        <hr>
+        <!-- Enter any references or sources using the format example below. 
+             If this is an original code sample you can just delete the Source: line below
+        -->
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/H30.html" target="_blank">WCAG H30 </a></p>
+        <p>Describing the purpose of a link in HTML in the text content of the <code>a</code> element.</p>
+        <!-- Enter testing results:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 45.4.0, and JAWS 17
+                    <ul>
+                        <li>Result: Screen reader announces link text.</li>
+                    </ul>
+                </li>
+                <li>iOS 10.2.1, Safari browser is based on the iOS version, VoiceOver on iPad
+                    <ul>
+                        <li>Result: iOS VoiceOver announces current routes at boulders climbing gym link, end main. </li>
+                    </ul>
+                </li>
+                <li>Android 7.1.2; Pixel, Chrome 55.0.2883.91, and TalkBack Version: 5.0.4.3.
+                     <ul>
+                        <li>Result: TalkBack announces current routes at boulders climbing gym. Tap to activate.</li>
+                     </ul>
+                </li> 
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
