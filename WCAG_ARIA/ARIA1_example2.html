@@ -12,14 +12,14 @@
     <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
     <header role="banner">
         <nav role="navigation">
-            <a href="../index.html">Home</a> &gt; <a href="aria_techniques.html">WCAG ARIA Techniques</a>
+            <a href="../index.html">Home</a> &gt; <a href="aria_techniques.html">ARIA Techniques</a>
         </nav>
         <hr>
     </header>
     <main role="main">
-        <h1>ARIA1 - Example 2: Using aria-describedby to associate instructions with form fields</h1>
+        <h1>ARIA1 - Example 2: Using the aria-describedby property to provide a descriptive label for user interface controls</h1>
         <!-- Component start -->
-
+        
         <form>
             <label for="fname">First name</label>
             <input name="" type="text" id="fname" aria-describedby="int2">
@@ -27,7 +27,7 @@
             <br>
             <input type="submit" value="Submit">
         </form>
-
+ 
         <!-- Component end -->
     </main>
     <footer role="contentinfo">
@@ -36,35 +36,21 @@
         <!-- Enter any references or sources using the format example below. 
              If this is an original code sample you can just delete the Source: line below
         -->
-        <h3>Source:</h3>
-        <div>
-            <ul>
-                <li>
-                    <a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA1" target="_blank">WCAG ARIA1: Using the aria-describedby property to provide a descriptive label for user interface controls</a>
-                </li>
-                <li>
-                    <a href="https://github.com/IBMa/Va11yS/blob/master/WCAG_ARIA/ARIA1_example2.html" target="_blank">Source code on GitHub</a>
-                </li>
-            </ul>
-        </div>
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA1" target="_blank">ARIA1</a></p>
         <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
         <h3>Tested on:</h3>
         <div>
             <ul>
-                <li>Windows 7, Firefox ESR 49.0.1, JAWS 17
+                <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
                     <ul>
                         <li>Result: Screen reader announces First Name, text field, and the descriptive text that follows.</li>
                     </ul>
                 </li>
-                <li>Windows 7, Chrome 57, JAWS 17
-                    <ul>
-                        <li>Result: Screen reader announces "First Name, edit" and the descriptive text that follows.</li>
-                    </ul>
-                </li>
-                <li>Windows 7, IE 11, JAWS 17
-                    <ul>
-                        <li>Result: Screen reader announces "First Name, edit" and the descriptive text that follows.</li>
-                    </ul>
+                <li>iOS 11.0 (15A372), Safari browser is based on the iOS version, VoiceOver on iPad
+                     <ul>
+                        <li>Result: iOS VoiceOver announces first name, text field. A bit of instructions for this field linked
+                         with the aria-describedby, double tap to edit.</li>
+                     </ul>
                 </li>
             </ul>
         </div>

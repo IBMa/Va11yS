@@ -12,12 +12,12 @@
     <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
     <header role="banner">
         <nav role="navigation">
-            <a href="../index.html">Home</a> &gt; <a href="aria_techniques.html">WCAG ARIA Techniques</a>
+            <a href="../index.html">Home</a> &gt; <a href="aria_techniques.html">ARIA Techniques</a>
         </nav>
         <hr>
     </header>
     <main role="main">
-        <h1>ARIA2 - Example 1: The <code>required</code> property is indicated by an asterisk placed next to the <code>label</code> element</h1>
+        <h1>ARIA2 - Example 1: Identifying a required field with the aria-required property</h1>
         <!-- Component start -->
         <form action="#" method="post"  id="login1" onsubmit="return errorCheck1()">
             <p>Note: [*]denotes mandatory field</p>
@@ -41,17 +41,7 @@
         <!-- Enter any references or sources using the format example below. 
              If this is an original code sample you can just delete the Source: line below
         -->
-        <h3>Source: </h3>
-        <div>
-            <ul>
-                <li>
-                    <a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA2" target="_blank">WCAG ARIA2: Identifying a required field with the <code>aria-required</code> property</a>
-                </li>
-                <li>
-                    <a href="https://github.com/IBMa/Va11yS/blob/master/WCAG_ARIA/ARIA2_example1.html" target="_blank">Source code on GitHub</a> 
-                </li>
-            </ul>
-        </div> 
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA2" target="_blank">ARIA2</a></p>
         <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
         <h3>Tested on:</h3>
         <div>
@@ -61,6 +51,15 @@
                         <li>Result: Screen reader announces each label, then edit required, type text.</li>
                     </ul>
                 </li>
+                <li>iOS 11.0 (15A372), Safari browser is based on the iOS version, VoiceOver on iPad
+                    <ul>
+                        <li> iOS VoiceOver announces:</li>
+                        <ul>
+                            <li>Login name, text field, required. Double tap to edit. </li>
+                            <li>Password, secure text field, required. Double to tap to edit. </li>
+                        </ul>
+                     </ul>
+                 </li>
             </ul>
         </div>
     </footer>
