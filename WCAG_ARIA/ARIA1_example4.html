@@ -13,22 +13,27 @@
     <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
     <header role="banner">
         <nav role="navigation">
-            <a href="../index.html">Home</a> &gt; <a href="aria_techniques.html">WCAG ARIA Techniques</a>
+            <a href="../index.html">Home</a> &gt; <a href="aria_techniques.html">ARIA Techniques</a>
         </nav>
         <hr>
     </header>
     <main role="main">
-        <h1>ARIA1 - Example 4 (Tooltip): Using the aria-describedby property to provide a descriptive label for user interface
-            controls</h1>
+        <h1>ARIA1 - Example 4 (Tooltip): Using the aria-describedby property to provide a descriptive label for user interface controls</h1>
         <!-- Component start -->
+        <html lang="en-us">
+
+        <body>
 
         <div id="container">
-            <h2>Create Account</h2>
+        <h2>Create Account</h2>
             <div class="text">
-                <label for="first">First Name:</label>
+            <label for="first">First Name:</label>
 
-                <input type="text" class="tooltip" id="first" name="first" size="20" onmouseover="tooltipMouse(this);" onfocus="tooltipFocus(this);"
-                    aria-required="false" title="Your first name is optional." />
+            <input type="text" class="tooltip" id="first" name="first" size="20"
+                onmouseover="tooltipMouse(this);"
+                onfocus="tooltipFocus(this);"
+                aria-required="false"
+                title="Your first name is optional." />
                 <div id="tooltip"></div>
             </div>
         </div>
@@ -47,9 +52,13 @@
             <ul>
                 <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
                     <ul>
-                        <li>Result: When tabbing to the text input field, the screen reader announces First Name: edit, type
-                            text, and the descriptive text for the input field.</li>
+                        <li>Result: When tabbing to the text input field, the screen reader announces First Name: edit, type text, and the descriptive text for the input field.</li>
                     </ul>
+                </li>
+                <li>iOS 11.0 (15A372), Safari browser is based on the iOS version , VoiceOver on iPad
+                     <ul>
+                        <li>Result: iOS VoiceOver announces first name, text field, end main. Your first name is optional, double tap to edit.</li>
+                     </ul>
                 </li>
             </ul>
         </div>

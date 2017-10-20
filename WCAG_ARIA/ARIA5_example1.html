@@ -1,38 +1,42 @@
 <!DOCTYPE html >
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-
-<head id="head">
-    <title>ARIA5 - Example 1</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+  <head id="head"> 
+    <title>ARIA5 - Example 1</title>  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
     <link rel="stylesheet" type="text/css" href="css/style_ARIA5.css">
     <script type="text/javascript" src="extras/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="extras/button.js"></script>
-</head>
-
+  </head>
+  
 <body>
     <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
     <header role="banner">
         <nav role="navigation">
-            <a href="../index.html">Home</a> &gt; <a href="aria_techniques.html">WCAG ARIA Techniques</a>
+            <a href="../index.html">Home</a> &gt; <a href="aria_techniques.html">ARIA Techniques</a>
         </nav>
         <hr>
-    </header>
+    </header>  
     <main role="main">
         <h1>ARIA5 - Example 1: Using WAI-ARIA state and property attributes to expose the state of a user interface component</h1>
-        <!-- Component start -->
-        <div class="toolbar" title="Text Formatting Controls 1" role="toolbar" id="toolbar1">
-            <button id="bold1" class="toggleButton" role="button" tabindex="0" aria-label="bold_label" aria-pressed="false" aria-controls="text1">
+        <!-- Component start --> 
+        <div class="toolbar" title="Text Formatting Controls 1" role="toolbar" id="toolbar1">       
+                <button id="bold1"  
+                    class="toggleButton"
+                    role="button"
+                    tabindex="0"
+                    aria-label="bold_label"
+                    aria-pressed="false"
+                    aria-controls="text1">
                     <img src="http://www.oaa-accessibility.org/media/examples/images/button-bold.png" alt="bold text" align="middle">
-                </button>
-        </div>
+                </button>      
+            </div>
 
-        <p style="clear: both; height: 1px">&nbsp;</p>
-        <div>
+            <p style="clear: both; height: 1px">&nbsp;</p>
 
             <label for="text1">Example Text 1</label>
             <textarea id="text1" name="text1" class="example bpld"> 
             When the "B" button is pressed this text changes to bold.
-            </textarea>
+            </textarea>	
             <p>&nbsp;</p>
         </div>
         <!-- Component end -->
@@ -44,23 +48,30 @@
              If this is an original code sample you can just delete the Source: line below
         -->
         <div>
-            <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA5" target="_blank">ARIA5</a></p>
-            <p>Source: <a href="http://www.oaa-accessibility.org/example/38/" target="_blank">Open Ajax Accessibility Example 38</a></p>
-            <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
-            <h3>Tested on:</h3>
-            <div>
-                <ul>
-                    <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
+        <p>Source: <a href="https://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA5" target="_blank">ARIA5</a></p>
+        <p>Source: <a href="http://www.oaa-accessibility.org/example/38/" target="_blank">Open Ajax Accessibility Example 38</a></p>
+        <!-- Enter testing results following examples below.  Include:  OS, Browser, AT used, and result -->
+        <h3>Tested on:</h3>
+        <div>
+            <ul>
+                <li>Windows 7, Firefox ESR 49.0.1, and JAWS 17
+                    <ul>
+                        <li>Result: Screenreader announces toggle button pressed bold_label when button is selected and toggle button unpressed bold_label when the button is deselected.</li>
+                    </ul>
+                </li>
+                <li>iOS 11.0 (15A372), Safari browser is based on the iOS version, VoiceOver on iPad
+                    <ul>
+                        <li> iOS VoiceOver announces: </li>
                         <ul>
-                            <li>Result: Screenreader announces toggle button pressed bold_label when button is selected and toggle
-                                button unpressed bold_label when the button is deselected.</li>
+                            <li>Bold underscore label, toggle button, not pressed. Double tap to toggle settings.</li>
+                            <li>Example text 1, when the B is pressed the text changes to bold, multiple line fields, end main. Double tap to edit.</li>
                         </ul>
-                    </li>
-                </ul>
-            </div>
+                     </ul>
+                 </li>
+            </ul>
+        </div>
         </div>
     </footer>
 
-</body>
-
-</html>
+    </body>
+    </html>
