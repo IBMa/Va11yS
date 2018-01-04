@@ -3,7 +3,7 @@ These React examples are a single page React application deployed on GitHub. It 
 
 To see the working demo, go to [React Examples](https://snidersd.github.io/react-examples/#/).
 
-The source code is in the [React Examples Repository](https://github.com/snidersd/react-examples).
+The source code is in the [React Examples repository](https://github.com/snidersd/react-examples).
 
 Select the link in the left navigation pane of the demo to view the example for each element. Accessibility test results are also included at the bottom of each example.
 
