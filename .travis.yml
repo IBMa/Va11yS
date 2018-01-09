@@ -3,7 +3,7 @@ sudo: required
 
 language: node_js
 node_js:
-  - "7"
+  - "8"
 
 # Additional addons that are need to be installed
 addons:
