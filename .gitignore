@@ -1,3 +1,7 @@
 /node_modules/
 /results/
+.aat.yml
+.travis.yml
 .DS_Store
+karma.conf.js
+package.json
