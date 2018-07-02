@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <title>Images &amp; Multimedia</title>
+
+    <link href="https://1.www.s81c.com/common/v18/css/www.css" rel="stylesheet">
+    <link href="https://1.www.s81c.com/common/v18/css/syntaxhighlighter.css" rel="stylesheet">
+    <link href="https://1.www.s81c.com/common/v18/css/grid-fluid.css" rel="stylesheet">
+
+    <script src="https://1.www.s81c.com/common/stats/ida_stats.js"></script>
+    <script src="https://1.www.s81c.com/common/v18/js/www.js"></script>
+    <script src="https://1.www.s81c.com/common/v18/js/syntaxhighlighter.js"></script>
+    <link href="https://1.www.s81c.com/common/v18/css/forms.css" rel="stylesheet">
+    <script src="https://1.www.s81c.com/common/v18/js/forms.js"></script>
+
+    <link href="/standards/web/includes/stylesheet.css" rel="stylesheet">
+    <script src="/standards/web/includes/common.js"></script>
+
+</head>
+
+<body>
+    <nav role="navigation" aria-label="Va11yS">
+        <div class="ibm-sitenav-menu-container">
+            <div class="ibm-sitenav-menu-name">
+                <a href="../index.html">Va11yS: Verified Accessibility Samples</a>
+            </div>
+            <div class="ibm-sitenav-menu-list">
+                <ul role="menubar">
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">
+                            <a href="../wcag.html">WCAG</a>
+                        </button>
+                        <ul role="menu" aria-label="wcag">
+                            <li role="presentation">
+                                <a role="menuitem" href="../WCAG_ARIA/aria_techniques.html">ARIA</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="../WCAG_GENERAL/general_techniques.html">General</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="../WCAG_HTML/html_techniques.html">HTML</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">
+                            <a href="components.html">Web Components</a>
+                        </button>
+                        <ul role="menu" aria-label="components">
+                            <li role="presentation">
+                                <a role="menuitem" href="buttons.html">Buttons</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="forms.html">Form Controls</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="multimedia.html">Images &amp; Multimedia</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="lists.html">Lists</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="nav.html">Navigation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">
+                            <a href="../frameworks.html">Frameworks</a>
+                        </button>
+                        <ul role="menu" aria-label="frameworks">
+                            <li role="presentation">
+                                <a role="menuitem" href="https://snidersd.github.io/">Angular 6 Example</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="https://snidersd2.github.io/example">Angular 6 &amp; Angular Material Example</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="https://snidersd.github.io/react-examples/">React</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div aria-labelledby="ibm-pagetitle-h1">
+        <div class="ibm-band ibm-background-blue-50 ibm-padding-bottom-1 ibm-padding-top-1 ibm-alternate-background">
+            <div class="ibm-columns ibm-padding-bottom-0">
+                <div class="ibm-col-1-1">
+                    <h2 class="ibm-h2 ibm-padding-bottom-0">Va11yS</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ibm-col-5-1 ibm-col-medium-6-2 ibm-hidden-small">
+        <nav role="navigation" aria-label="Navigation for Design">
+            <div id="ibm-navigation">
+                <ul id="ibm-primary-links" role="tree" aria-labelledby="ibm-pagetitle-h1">
+                    <li role="presentation" id="ibm-overview">
+                        <a role="treeitem" href="wcag.html">WCAG</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="../WCAG_ARIA/aria_techniques.html">ARIA Techniques</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="../WCAG_GENERAL/GENERAL_techniques.html">General Techniques</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="../WCAG_HTML/html_techniques.html">HTML Techniques</a>
+                    </li>
+                    <li role="presentation" id="ibm-overview">
+                        <a role="treeitem" href="components.html">Web Components</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="buttons.html">Buttons</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="forms.html">Form Controls</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="multimedia.html" aria-selected="true">Images &amp; Multimedia</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="lists.html">Lists</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="nav.html">Navigation</a>
+                    </li>
+                    <li role="presentation" id="ibm-overview">
+                        <a role="treeitem" href="../frameworks.html">Frameworks</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="https://snidersd.github.io/">Angular 6 Example</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="https://snidersd2.github.io/example">Angular 6 &amp; Angular Material Example</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="https://snidersd.github.io/react-examples/">React Examples</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="ibm-col-5-4 ibm-col-medium-6-4">
+        <main role="main">
+            </br>
+            <h3 class="ibm-h3">Images and Multimedia</h3>
+            <div class="ibm-col-5-2 ibm-col-medium-6-4">
+
+                <ul data-widget="twisty" class="ibm-twisty">
+                    <li>
+                        <span class="ibm-twisty-head">
+                            <strong class="ibm-h4">Images, Icons &amp; Graphics</strong>
+                        </span>
+                        <div class="ibm-twisty-body">
+                            <ul class="ibm-link-list">
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA10_example1.html">WCAG ARIA10 - Example 1: Providing a short description for a complex graphic </a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_GENERAL/G73_example1.html">WCAG General - G73 Example 1: A bar chart on a Web page showing the sales for the top
+                                        three salespeople that includes a long description </a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_GENERAL/G74_example1.html">WCAG General - G74 Example 1: A bar chart on a Web page showing the sales for the top
+                                        three salespeople that includes a long description after the chart</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H2_example1.html">WCAG HTML - H2 Example 1: Icon and text in the same a element</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H2_example2.html">WCAG HTML - H2 Example 2: Combining adjacent image and text links for the same resource</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H24_example1.html">WCAG HTML - H24 Example 1: Using the alt attribute of the area element to provide text
+                                        that describes the purpose of the image map areas</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H30_example2.html">WCAG HTML - H30 Example 2: Using the alt attribute for the img element to describe the
+                                        purpose of a graphical link</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H30_example3.html">WCAG HTML - H30 Example 3: Using an empty alt when the anchor containts text that describes
+                                        the purpose of the link in addition to the img element</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H30_example4.html">WCAG HTML - H30 Example 4: Using multiple modalities to allow identification of an icon</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H30_example5.html">WCAG HTML - H30 Example 5: A link contains text and an icon, and the icon provides additional
+                                        information about the target.</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H37_example1.html">WCAG HTML - H37 Example 1: Using alt attributes on img elements</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H45_example1.html">WCAG HTML - H45 Example 1: Using longdesc to refer to a long description contained on
+                                        a separate resource.</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H67_example1.html">WCAG HTML - H67 Example 1: Using null alt text on a decorative image</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H86_example1.html">WCAG HTML - H86 Example 1: Providing text alternatives for ASCII art, emoticons, and
+                                        leetspeak (e.g. emoticon)</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H86_example2.html">WCAG HTML - H86 Example 2: Providing text alternatives for ASCII art, emoticons, and
+                                        leetspeak (e.g. ASCII)</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H86_example3.html">WCAG HTML - H86 Example 3: Providing text alternatives for ASCII art, emoticons, and
+                                        leetspeak (e.g. leetspeak)</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H91_example1b.html">WCAG HTML - H91 Example 1b: Using an alt atribute for an img to provide the link name</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H91_example1c.html">WCAG HTML - H91 Example 1c: Inserting a space between the image and the adjacent word
+                                        so that words will not run together</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H91_example2e.html">WCAG HTML - H91 Example 2e: Demonstrating how AT uses the alt attribute and ignoring</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA15_example1.html">WCAG ARIA15- Example 1: Using aria-describedby to provide descriptions of images</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul data-widget="twisty" class="ibm-twisty">
+                    <li>
+                        <span class="ibm-twisty-head">
+                            <strong class="ibm-h4">Video</strong>
+                        </span>
+                        <div class="ibm-twisty-body">
+                            <ul class="ibm-link-list">
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H95_example1.html">WCAG HTML - H95 Example 1: Using the
+                                        <code>track</code> element to provide captions</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H95_example2.html">WCAG HTML - H95 Example 2: Captions in multiple languages</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H96_example1.html">WCAG HTML - H96 Example 1: Using the
+                                        <code>track</code> element to provide audio descriptions (e.g. one language)</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H96_example2.html">WCAG HTML - H96 Example 2: Using the
+                                        <code>track</code> element to provide audio descriptions (e.g. multiple languages)</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H96_example3.html">WCAG HTML - H96 Example 3: Using the
+                                        <code>track</code> element to provide audio descriptions (e.g. captions in multiple languages)</a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="">WCAG HTML - </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul data-widget="twisty" class="ibm-twisty">
+                    <li>
+                        <span class="ibm-twisty-head">
+                            <strong class="ibm-h4">Images &amp; Multimedia Used in Various Frameworks</strong>
+                        </span>
+                        <div class="ibm-twisty-body">
+                            <ul class="ibm-link-list">
+                                <li>
+                                    <a class="ibm-forward-link" href="https://snidersd2.github.io/birds">Angular 6 and Angular Material images of birds </a>
+                                </li>
+                                <li>
+                                    <a class="ibm-forward-link" href="https://snidersd.github.io/react-examples/#/longdesc">React - complex graphic</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    </main>
+    </div>
+</body>
+
+</html>

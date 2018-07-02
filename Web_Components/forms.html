@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <meta charset="utf-8">
+    <title>Forms</title>
+
+    <link href="https://1.www.s81c.com/common/v18/css/www.css" rel="stylesheet">
+    <link href="https://1.www.s81c.com/common/v18/css/syntaxhighlighter.css" rel="stylesheet">
+    <link href="https://1.www.s81c.com/common/v18/css/grid-fluid.css" rel="stylesheet">
+
+    <script src="https://1.www.s81c.com/common/stats/ida_stats.js"></script>
+    <script src="https://1.www.s81c.com/common/v18/js/www.js"></script>
+    <script src="https://1.www.s81c.com/common/v18/js/syntaxhighlighter.js"></script>
+    <link href="https://1.www.s81c.com/common/v18/css/forms.css" rel="stylesheet">
+    <script src="https://1.www.s81c.com/common/v18/js/forms.js"></script>
+
+    <link href="/standards/web/includes/stylesheet.css" rel="stylesheet">
+    <script src="/standards/web/includes/common.js"></script>
+
+</head>
+
+<body>
+    <nav role="navigation" aria-label="Va11yS">
+        <div class="ibm-sitenav-menu-container">
+            <div class="ibm-sitenav-menu-name">
+                <a href="../index.html">Va11yS: Verified Accessibility Samples</a>
+            </div>
+            <div class="ibm-sitenav-menu-list">
+                <ul role="menubar">
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">
+                            <a href="../wcag.html">WCAG</a>
+                        </button>
+                        <ul role="menu" aria-label="wcag">
+                            <li role="presentation">
+                                <a role="menuitem" href="../WCAG_ARIA/aria_techniques.html">ARIA</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="../WCAG_GENERAL/general_techniques.html">General</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="../WCAG_HTML/html_techniques.html">HTML</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">
+                            <a href="components.html">Web Components</a>
+                        </button>
+                        <ul role="menu" aria-label="components">
+                            <li role="presentation">
+                                <a role="menuitem" href="buttons.html">Buttons</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="forms.html">Form Controls</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="multimedia.html">Images &amp; Multimedia</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="lists.html">Lists</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="nav.html">Navigation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">
+                            <a href="../frameworks.html">Frameworks</a>
+                        </button>
+                        <ul role="menu" aria-label="frameworks">
+                            <li role="presentation">
+                                <a role="menuitem" href="https://snidersd.github.io/">Angular 6 Example</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="https://snidersd2.github.io/example">Angular 6 &amp; Angular Material Example</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="https://snidersd.github.io/react-examples/">React</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div aria-labelledby="ibm-pagetitle-h1">
+        <div class="ibm-band ibm-background-blue-50 ibm-padding-bottom-1 ibm-padding-top-1 ibm-alternate-background">
+            <div class="ibm-columns ibm-padding-bottom-0">
+                <div class="ibm-col-1-1">
+                    <h2 class="ibm-h2 ibm-padding-bottom-0">Va11yS</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ibm-col-5-1 ibm-col-medium-6-2 ibm-hidden-small">
+        <nav role="navigation" aria-label="Navigation">
+            <div id="ibm-navigation">
+                <ul id="ibm-primary-links" role="tree" aria-labelledby="ibm-pagetitle-h1">
+                    <li role="presentation" id="ibm-overview">
+                        <a role="treeitem" href="wcag.html">WCAG</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="../WCAG_ARIA/aria_techniques.html">ARIA Techniques</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="../WCAG_GENERAL/GENERAL_techniques.html">General Techniques</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="../WCAG_HTML/html_techniques.html">HTML Techniques</a>
+                    </li>
+                    <li role="presentation" id="ibm-overview">
+                        <a role="treeitem" href="components.html">Web Components</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="buttons.html">Buttons</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="forms.html" aria-selected="true">Form Controls</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="multimedia.html">Images &amp; Multimedia</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="lists.html">Lists</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="nav.html">Navigation</a>
+                    </li>
+                    <li role="presentation" id="ibm-overview">
+                        <a role="treeitem" href="../frameworks.html">Frameworks</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="https://snidersd.github.io/">Angular 6 Example</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="https://snidersd2.github.io/example">Angular 6 &amp; Angular Material Example</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="treeitem" href="https://snidersd.github.io/react-examples/">React Examples</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main role="main">
+        </br>
+        <h3 class="ibm-h3">Form Controls</h3>
+
+        <div class="ibm-col-5-2 ibm-col-medium-6-4">
+            <ul data-widget="twisty" class="ibm-twisty">
+                <li>
+                    <span class="ibm-twisty-head">
+                        <strong class="ibm-h4">Checkboxes and Radio Groups</strong>
+                    </span>
+                    <div class="ibm-twisty-body">
+                        <ul class="ibm-link-list">
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA9_example3.html">WCAG ARIA9 - Example 3: A conference workshop booking table (e.g. textboxes in a table)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA17_example2.html">WCAG ARIA17 - Example 2: Using grouping roles to identify related form controls (e.g. radio
+                                    group)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_GENERAL/G13_example1.html">WCAG General - G13 Example 1: Describing what will happen before a change to a form control
+                                    that causes a change of context to occur is made (e.g. radio group)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H44_example2.html">WCAG HTML - H44 Example 2: H44 Example 2: Using label elements to associate text labels with
+                                    form controls (e.g. checkbox)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H71_example1.html">WCAG HTML - H71 Example 1: Providing a description for groups of form controls using fieldset
+                                    and legend element (e.g. radio group)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H71_example2.html">WCAG HTML - H71 Example 2: H71 Example 2: Providing a description for groups of form controls
+                                    using fieldset and legend elements (e.g. checkboxes)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H71_example3.html">WCAG HTML - H71 Example 3: Radio buttons submitting to the same named field</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H91_example4.html">WCAG HTML - H91 Example 4: Using HTML form controls and links (e.g. checkbox)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H91_example5.html">WCAG HTML - H91 Example 5: Using HTML form controls and links (e.g. radio group)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H91_example8.html">WCAG HTML - H91 Example 8: Using HTML form controls and links (e.g. radio fieldset)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <ul data-widget="twisty" class="ibm-twisty">
+                <li>
+                    <span class="ibm-twisty-head">
+                        <strong class="ibm-h4">Dropdowns and Listboxes</strong>
+                    </span>
+                    <div class="ibm-twisty-body">
+                        <ul class="ibm-link-list">
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA16_example3.html">WCAG ARIA16 - Example 3: Using aria-labelledby to provide a name for user interface controls
+                                    (e.g. dropdown)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H65_example1.html">WCAG HTML - H65 Example 1: Using the title attribute to identify form controls when the label
+                                    element cannot be used</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H84_example1.html">WCAG HTML - H84 Example 1: Using a button with a select element to perform an action (e.g.
+                                    calendar)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H84_example2.html">WCAG HTML - H84 Example 2: Using a button with a select element to perform an action (e.g.
+                                    choose an action)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H85_example1.html">WCAG HTML - H85 Example 1: Using optgroup to group option elements inside a select</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H85_example2.html">WCAG HTML - H85 Example 2: Demonstrating how a multi-select box can make use of the optrgroup
+                                    element</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H91_example6a.html">WCAG HTML - H91 Example 6a: select element list box demonstrating use of selected attribute
+                                    and the label element to name the list box</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H91_example6b.html">WCAG HTML - H91 Example 6b: Using title attribute to name a select element rather than a
+                                    visible label</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <ul data-widget="twisty" class="ibm-twisty">
+                <li>
+                    <span class="ibm-twisty-head">
+                        <strong class="ibm-h4">Input Fields</strong>
+                    </span>
+                    <div class="ibm-twisty-body">
+                        <ul class="ibm-link-list">
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA1_example2.html">WCAG ARIA1 - Example 2: Using the aria-describedby property to provide a descriptive label
+                                    for user interface controls</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA1_example4.html">WCAG ARIA1 - Example 4 (Tooltip): Using the aria-describedby property to provide a descriptive
+                                    label for user interface controls</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA9_example1.html">WCAG ARIA9 - Example 1: A time-out input field with concatenated label</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA9_example2.html">WCAG ARIA9 - Example 2: A simple data table with text inputs</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA14_example2.html">WCAG ARIA14 - Example 2: A phone number with multiple fields</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA16_example1.html">WCAG ARIA16 - Example 1: Using aria-labelledby to provide a name for user interface controls
+                                    (e.g. text field)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA17_example1.html">WCAG ARIA17 - Example 1: Using grouping roles to identify related form controls (e.g. text
+                                    input)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_GENERAL/G70_example1.html">WCAG General - G70 Example 1: Search an on-line dictionary of computer terms</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_GENERAL/G71_example1.html">WCAG General - G71 Example 1: A label element that includes a help link</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H32_example1.html">WCAG HTML - H32 Example 1: Basic example of a text input form field with a submit button</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H44_example1.html">WCAG HTML - H44 Example 1: Using label elements to associate text labels with form controls</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H65_example2.html">WCAG HTML - H65 Example 2: Using the title attribute to identify form controls when the label
+                                    element cannot be used (e.g. phone number)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H65_example3.html">WCAG HTML - H65 Example 3: Using the title attribute to identify form controls when the label
+                                    element cannot be used (e.g. search)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H71_example4.html">WCAG HTML - H71 Example 4: Providing a description for groups of form controls using fieldset
+                                    and legend elements</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H91_example3a.html">WCAG HTML - H91 Example 3a: Using the value attribute for the input field name</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H91_example3b.html">WCAG HTML - H91 Example 3b: Using the title attribute for the input field name</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H91_example7a.html">WCAG HTML - H91 Example 7a: textarea element demonstrating use of the label element to name
+                                    the text box</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H91_example7b.html">WCAG HTML - H91 Example 7b: Using title attribute to name a textarea element</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <ul data-widget="twisty" class="ibm-twisty">
+                <li>
+                    <span class="ibm-twisty-head">
+                        <strong class="ibm-h4">Required Fields</strong>
+                    </span>
+                    <div class="ibm-twisty-body">
+                        <ul class="ibm-link-list">
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA2_example1.html">WCAG ARIA2 - Example 1: The required property is indicated by an asterisk placed next to
+                                    the label element</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA2_example2.html">WCAG ARIA2 - Example 2: The required property is indicated by the word "required" placed
+                                    next to the label element</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA2_example3.html">WCAG ARIA2 - Example 3: Required fields are indicated by a red border and a star icon rendered
+                                    via CSS using content:before</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA2_example4.html">WCAG ARIA2 - Example 4: A required text input field in XHTML</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA2_example5.html">WCAG ARIA2 - Example 5: Adding aria-required property via script</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA21_example1.html">WCAG ARIA21 - Example 1: Using Aria-Invalid to Indicate An Error Field (e.g. required)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA21_example2.html">WCAG ARIA21 - Example 2: Using Aria-Invalid to Indicate An Error Field (e.g. data)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H90_example1.html">WCAG HTML - H90 Example 1: Using text to indicate required state</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H90_example2.html">WCAG HTML - H90 Example 2: Using an asterisk to indicate required state</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H90_example3.html">WCAG HTML - H90 Example 3: Using an image to indicate required state</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_HTML/H90_example4.html">WCAG HTML - H90 Example 4: Indicating required state for groups of radio buttons or check
+                                    box controls</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <ul data-widget="twisty" class="ibm-twisty">
+                <li>
+                    <span class="ibm-twisty-head">
+                        <strong class="ibm-h4">Other Form Controls</strong>
+                    </span>
+                    <div class="ibm-twisty-body">
+                        <ul class="ibm-link-list">
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA16_example2.html">WCAG ARIA16 Example 2: Using aria-labelledby to provide a name for user interface controls
+                                    (e.g. slider)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_ARIA/ARIA19_example1.html">WCAG ARIA19 - Example 1: Using ARIA role=alert or Live Regions to Identify Errors (e.g. alert
+                                    dialog for a text input field)</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://ibma.github.io/Va11yS/WCAG_GENERAL/G85_example1.html">WCAG General - G85 Example 1: When a user inputs invalid data on a form field an alert dialog
+                                    appears upon exiting the field or submitting the form</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <ul data-widget="twisty" class="ibm-twisty">
+                <li>
+                    <span class="ibm-twisty-head">
+                        <strong class="ibm-h4">Form Controls Used in Various Frameworks</strong>
+                    </span>
+                    <div class="ibm-twisty-body">
+                        <ul class="ibm-link-list">
+                            <li>
+                                <a class="ibm-forward-link" href="https://snidersd.github.io/detail/9">Angular 6</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://snidersd2.github.io/contact-us">Angular 6 &amp; Angular Material</a>
+                            </li>
+                            <li>
+                                <a class="ibm-forward-link" href="https://snidersd.github.io/react-examples/#/form">React</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        </div>
+    </main>
+    </div>
+</body>
+
+</html>
