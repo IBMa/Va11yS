@@ -4,46 +4,153 @@
 <head>
     <meta name="viewport" content="width=device-width, minimal-ui">
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Va11yS: Verified Accessibility Samples</title>
+
+    <link href="https://1.www.s81c.com/common/v18/css/www.css" rel="stylesheet">
+    <link href="https://1.www.s81c.com/common/v18/css/syntaxhighlighter.css" rel="stylesheet">
+    <link href="https://1.www.s81c.com/common/v18/css/grid-fluid.css" rel="stylesheet">
+
+    <script src="https://1.www.s81c.com/common/v18/js/www.js"></script>
+    <script src="https://1.www.s81c.com/common/v18/js/syntaxhighlighter.js"></script>
+    <link href="https://1.www.s81c.com/common/v18/css/forms.css" rel="stylesheet">
+    <script src="https://1.www.s81c.com/common/v18/js/forms.js"></script>
+
+    <link href="/standards/web/includes/stylesheet.css" rel="stylesheet">
+    <script src="/standards/web/includes/common.js"></script>
+
 </head>
 
 <body>
-    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
-    <header role="banner">
-        <nav role="navigation">
-            <a href="index.html">Home</a>
-        </nav>
-        <hr>
-    </header>
-    <main role="main">
-        <h1>Va11yS: Verified Accessibility Samples</h1>
-        <!-- Component start -->
-        <ul>
-            <li><a href="WCAG_HTML/html_techniques.html">WCAG HTML Techniques</a></li>
-            <li><a href="WCAG_ARIA/aria_techniques.html">WCAG ARIA Techniques</a></li>
-            <li><a href="WCAG_GENERAL/general_techniques.html">WCAG General Techniques</a></li>
-            <li><a href="https://snidersd.github.io/react-examples/">React Examples</a></li>
-            <li><a href="https://snidersd.github.io/">Angular 6 Examples</a></li>
-            <li><a href="https://github.com/IBMa/Va11yS">Va11yS repository on GitHub</a></li>
-        </ul>
-        <h2>Using These Code Samples</h2>
-        <p>
-            These code samples help developers and testers understand how different web components operate with assistive technology
-            (AT) on desktop and mobile devices. They contain sample components along with testing results. When a new OS
-            or AT is released, the data will be updated.
-        </p>
-        <p>
-            The best way to use these samples is to experiment with the component behaviors on different mobile devices or desktop environments.
-            You can then "view source" to copy and modify the code for your own applications.
-        </p>
-        <p><b>Note:</b> The look and feel of these code samples is quite simplistic as the goal is to provide the cleanest view
-            of the components being used without clutter.</p>
-        <!-- Component end -->
+    <nav role="navigation" aria-label="Va11yS">
+        <div class="ibm-sitenav-menu-container">
+            <div class="ibm-sitenav-menu-name">
+                <a href="index.html">Va11yS: Verified Accessibility Samples</a>
+            </div>
+            <div class="ibm-sitenav-menu-list">
+                <ul role="menubar">
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">
+                            <a href="wcag.html">WCAG</a>
+                        </button>
+                        <ul role="menu" aria-label="wcag">
+                            <li role="presentation">
+                                <a role="menuitem" href="WCAG_ARIA/aria_techniques.html">ARIA</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="WCAG_GENERAL/general_techniques.html">General</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="WCAG_HTML/html_techniques.html">HTML</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">
+                            <a href="Web_Components/components.html">Web Components</a>
+                        </button>
+                        <ul role="menu" aria-label="components">
+                            <li role="presentation">
+                                <a role="menuitem" href="Web_components/buttons.html">Buttons</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="Web_Components/forms.html">Form Controls</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="Web_Components/multimedia.html">Images &amp; Multimedia</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="Web_Components/lists.html">Lists</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="Web_Components/nav.html">Navigation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">
+                            <a href="frameworks.html">Frameworks</a>
+                        </button>
+                        <ul role="menu" aria-label="frameworks">
+                            <li role="presentation">
+                                <a role="menuitem" href="https://snidersd.github.io/">Angular 6 Example</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="https://snidersd2.github.io/example">Angular 6 &amp; Angular Material Example</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="https://snidersd.github.io/react-examples/">React Example</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main role="main" aria-labelledby="ibm-pagetitle-h1">
+        <div class="ibm-band ibm-background-blue-50 ibm-padding-bottom-1 ibm-padding-top-1 ibm-alternate-background">
+            <div class="ibm-columns ibm-padding-bottom-0">
+                <div class="ibm-col-1-1">
+                    <h2 class="ibm-h2 ibm-padding-bottom-0">Va11yS</h2>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ibm-blocklink ibm-padding-content">
+            <p class="ibm-icon-nolink ibm-textcolor-default ibm-padding-bottom-0">
+                The best way to use these samples is to experiment with the component behaviors on different mobile devices or desktop environments.
+                You can then "view source" to copy and modify the code for your own applications.
+                <b>Note:</b> The look and feel of these code samples is quite simplistic as the goal is to provide the cleanest
+                view.
+            </p>
+        </a>
+        <div class="ibm-columns" data-items=".ibm-card" data-widget="setsameheight">
+            <div class="ibm-col-5-2 ibm-col-medium-6-2">
+                <div class="ibm-card">
+                    <div class="ibm-card__content">
+                        <h3 class="ibm-h3">WCAG</h3>
+                        <p>This section provides WCAG samples by technique number for:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>ARIA</li>
+                            <li>General</li>
+                        </ul>
+                        <p class="ibm-padding-top-1 ibm-button-link">
+                            <a href="wcag.html" class="ibm-btn-pri ibm-btn-blue-50">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ibm-col-5-2 ibm-col-medium-6-2">
+                <div class="ibm-card">
+                    <div class="ibm-card__content">
+                        <h3 class="ibm-h3">Web Components</h3>
+                        <p>This section provides an alphabetical list of samples by Web Component, as well as the technology
+                            and framework used to create each of the examples.
+                        </p>
+                        <p class="ibm-padding-top-1 ibm-button-link">
+                            <a href="Web_Components/components.html" class="ibm-btn-pri ibm-btn-blue-50">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ibm-col-5-2 ibm-col-medium-6-2">
+                <div class="ibm-card">
+                    <div class="ibm-card__content">
+                        <h3 class="ibm-h3">Frameworks</h3>
+                        <p>This section includes examples and test results for:
+                            <ul>
+                                <li>A React Single-page Application</li>
+                                <li>Angular 6 Single-page Application</li>
+                                <li>Angular 6 and Angular Material Application</li>
+                            </ul>
+                        </p>
+                        <p class="ibm-padding-top-1 ibm-button-link">
+                            <a href="frameworks.html" class="ibm-btn-pri ibm-btn-blue-50">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer role="contentinfo">
-        <hr>
-    </footer>
 </body>
 
 </html>
