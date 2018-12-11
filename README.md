@@ -1,7 +1,7 @@
 # Va11yS
 Visit the [Va11yS site](https://ibma.github.io/Va11yS/) to test the samples with your AT.
 
-Learn more about this project on the [IBM developerWorks Open: Va11yS](https://developer.ibm.com/open/openprojects/va11ys/) project page.
+Learn more about this project on the [IBM developerWorks Open: Va11yS](https://developer.ibm.com/code/open/openprojects/va11ys/) project page.
 
 ### Verified Accessibility Samples
 
