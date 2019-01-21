@@ -4,21 +4,169 @@
 <head>
     <meta name="viewport" content="width=device-width, minimal-ui">
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>WCAG General Technique Examples</title>
+
+    <link href="https://1.www.s81c.com/common/v18/css/www.css" rel="stylesheet">
+    <link href="https://1.www.s81c.com/common/v18/css/syntaxhighlighter.css" rel="stylesheet">
+    <link href="https://1.www.s81c.com/common/v18/css/grid-fluid.css" rel="stylesheet">
+    <script src="https://1.www.s81c.com/common/v18/js/www.js"></script>
+    <script src="https://1.www.s81c.com/common/v18/js/syntaxhighlighter.js"></script>
+    <link href="https://1.www.s81c.com/common/v18/css/forms.css" rel="stylesheet">
+    <script src="https://1.www.s81c.com/common/v18/js/forms.js"></script>
+
+    <link href="/standards/web/includes/stylesheet.css" rel="stylesheet">
+    <script src="/standards/web/includes/common.js"></script>
+
 </head>
 
 <body>
-    <!-- Header w/ breadcrumb (Adjust breadcrumb links as needed) -->
-    <header role="banner">
-        <nav role="navigation">
-            <a href="../index.html">Home</a> &gt; <a href="general_techniques.html">WCAG General Techniques</a>
-        </nav>
-        <hr>
-    </header>
+    <nav role="navigation" aria-label="Va11yS">
+        <div class="ibm-sitenav-menu-container">
+            <div class="ibm-sitenav-menu-name">
+                <a href="../index.html">Va11yS: Verified Accessibility Samples</a>
+            </div>
+            <div class="ibm-sitenav-menu-list">
+                <ul role="menubar">
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">
+                            <a href="../Web_Components/components.html">Web Components</a>
+                        </button>
+                        <ul role="menu" aria-label="components">
+                            <li role="presentation">
+                                <a role="menuitem" href="../Web_Components/buttons.html">Buttons</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="../Web_Components/forms.html">Form Controls</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="../Web_Components/multimedia.html">Images &amp; Multimedia</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="../Web_Components/lists.html">Lists</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="../Web_Components/nav.html">Navigation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">
+                            <a href="../wcag.html">WCAG</a>
+                        </button>
+                        <ul role="menu" aria-label="wcag">
+                            <li role="presentation">
+                                <a role="menuitem" href="aria_techniques.html">ARIA</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="../WCAG_GENERAL/general_techniques.html">General</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="../WCAG_HTML/html_techniques.html">HTML</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="ibm-haschildlist">
+                        <button role="menuitem">
+                            <a href="../frameworks.html">Frameworks</a>
+                        </button>
+                        <ul role="menu" aria-label="frameworks">
+                            <li role="presentation">
+                                <a role="menuitem" href="../https://snidersd.github.io/">Angular 6 Example</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="../https://snidersd2.github.io/example">Angular 6 &amp; Angular
+                                    Material Example</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" href="../https://snidersd.github.io/react-examples/">React</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <main role="main">
-        <h1>WCAG General Technique Examples</h1>
-        <!-- Component start -->
+        <div>
+            <div class="ibm-band ibm-background-blue-50 ibm-padding-bottom-1 ibm-padding-top-1 ibm-alternate-background">
+                <div class="ibm-columns ibm-padding-bottom-0">
+                    <div class="ibm-col-1-1">
+                        <h2 class="ibm-h2 ibm-padding-bottom-0">Va11yS</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ibm-col-5-1 ibm-col-medium-6-2 ibm-hidden-small">
+            <nav role="navigation" aria-label="menu">
+                <div id="ibm-navigation">
+                    <ul id="ibm-primary-links" role="tree" aria-label="side nav">
+                        <li role="presentation">
+                        <li role="presentation">
+                            <a role="treeitem" href="../Web_Components/components.html">Web Components</a>
+                            <ul role="group">
+                                <li role="presentation">
+                                    <a role="treeitem" href="../Web_Components/buttons.html">Buttons</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="treeitem" href="../Web_Components/forms.html">Form Controls</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="treeitem" href="../Web_Components/multimedia.html">Images &amp; Multimedia</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="treeitem" href="../Web_Components/lists.html">Lists</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="treeitem" href="../Web_Components/nav.html">Navigation</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <a role="treeitem" href="../wcag.html">WCAG</a>
+                        <ul role="group">
+                            <li role="presentation">
+                                <a role="treeitem" href="../WCAG_ARIA/aria_techniques.html">ARIA Techniques</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="treeitem" href="../WCAG_GENERAL/general_techniques.html" aria-selected="true">General Techniques</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="treeitem" href="../WCAG_HTML/html_techniques.html">HTML Techniques</a>
+                            </li>
+                        </ul>
+                        </li>
+
+                        <li role="presentation">
+                            <a role="treeitem" href="../frameworks.html">Frameworks</a>
+                            <ul role="group">
+                                <li role="presentation">
+                                    <a role="treeitem" href="https://snidersd.github.io/">Angular 6 Example</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="treeitem" href="https://snidersd2.github.io/example">Angular 6 &amp;
+                                        Angular Material Example</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="treeitem" href="https://snidersd.github.io/react-examples/">React Examples</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="presentation">
+                            <hr />
+                            <a role="treeitem" href="https://github.com/IBMa/Va11yS">GitHub Repo</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="ibm-col-5-4 ibm-col-medium-6-4">
+            </br>
+            <div class="ibm-columns" data-items=".ibm-card" data-widget="setsameheight">
+                <div class="ibm-col-3-2 ibm-col-medium-6-2">
+                    <div class="ibm-card">
+                        <div class="ibm-card__content">
+                            <h3 class="ibm-h3">WCAG General Technique Examples</h3>
+                            <!-- Component start -->
         <ul>
             <li>G1: Adding a link at the top of each page that goes directly to the main content area
                 <ul>
@@ -102,11 +250,7 @@
             </li>
         </ul>
         <!-- Component end -->
-    </main>
-    <footer role="contentinfo">
-        <!-- Enter testing results:  OS, Browser, AT used, and result -->
-        <hr>
-    </footer>
+    </div>
 </body>
 
 </html>
